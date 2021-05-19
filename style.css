@@ -1,12 +1,14 @@
 html{
     font-size: 62.5%;
 }
+
 body{
     /* padding: 2.2rem 7rem; */
-   font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
-li .active{
+ul li .active{
     text-decoration: underline;
     background-color: blue;
     /* padding-top: 5px ; */
@@ -14,12 +16,16 @@ li .active{
 .h1text{
     font-size: 5.5rem;
     line-height: 7rem;
+    /* font-weight: bold; */
     letter-spacing: normal;
+    color: #000000;
 }
 .h2text{
     font-size: 4rem;
     line-height: 5rem;
     letter-spacing: normal;
+    color: #000000;
+    font-weight: bold;
 }
 .h3text{
     font-size: 2.4rem;
@@ -27,28 +33,42 @@ li .active{
     letter-spacing: normal;
 }
 .h4text{
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
     letter-spacing: normal;
+    color: #000000;
 }
 .h5text{
     font-size: 1.8rem;
     line-height: 2.6rem;
     letter-spacing: normal;
     font-weight: normal;
-    color: #383e69;
+    color: #a4acb0;
 }
 .h6text{
-    font-size: 1rem;
+   font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: normal;
+    color: #a7afb2;
+}
+p{
+    font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: normal;
+    color: #a4acb0; 
+}
+.textwithli{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: normal;
+    color: #a4acb0; 
 }
 /* .darkgreyblue{
     color: #383e69;
 } */
 .headcol{
-  background-color: #f0f5f9;
-   padding: 2.2rem 7rem;
+    background-color: #f3f6fd;
+    padding: 2.2rem 7rem;
 }
 .nav-pills .nav-link.active{
     color: #3a5edd;
@@ -64,4 +84,193 @@ li .active{
 
 .projectcontents{
     padding: 2.2rem 2.2rem 2.2rem 7rem;
+    background-color: #f8f8f8;
 }
+.badge1{
+    padding: 10px 0;
+    width: 30%;
+}
+.daycol{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 2rem 2rem ;
+    width: 23.5%;
+    height: auto;
+}
+.timerow{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.timezonecir{
+    padding: 2.2rem 7rem 3rem 7rem;
+}
+.colcolor{
+    background-color: #fbfafa;
+}
+table tr{
+    border-style: hidden;
+}
+table thead{
+background-color: #fbfafa;
+}
+table tr:hover{
+    background-color: white;
+    
+}
+.green{
+    background-color: #dcf3d7;
+   
+}
+.red{
+    background-color: #f9cece;
+    color: #ef4c4e;
+}
+.blue{
+    background-color: #cfddfd;
+    color: #2365f9;
+}
+.darkgreen{
+    background-color: #4c9e17;
+    color: #ffffff;
+}
+.p2pill{
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #306920;
+}
+.badge2{
+    width:60%;
+}
+.fa-check-circle , .fa-exclamation-circle{
+    color: #9ca5a9;
+}
+.fa-clock1 {
+    border: 10px solid #f5993b;
+    border-radius: 50%;
+    color: white;
+    background: #f5993b;
+}
+.clockcol1{
+    border: 1px solid white;
+    border-radius: 50%;
+    background: #fddca7;
+}
+.fa-clock2 {
+    border: 10px solid #ef5068;
+    border-radius: 50%;
+    color: white;
+    background: #ef5068;
+}
+.clockcol2{
+    border: 1px solid white;
+    border-radius: 50%;
+    background: #f3a4b8;
+}
+.fa-clock3 {
+    border: 10px solid #5cbd37;
+    border-radius: 50%;
+    color: white;
+    background: #5cbd37;
+}
+.clockcol3{
+    border: 1px solid white;
+    border-radius: 50%;
+    background: #b6e2a7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1281px) {
+ .endcentext{
+     text-align: end;
+ }
+
+  
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+     .endcentext{
+     text-align: end;
+ }
+  .daycol{
+      width: 33.5%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   .daycol{
+      width: 50%;
+  }
+  .badge2{
+      width:auto;
+  }
+  
+  
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    .daycol{
+        width: 70%;
+        height: auto;
+    }
+     .badge2{
+      width:auto;
+  }
+  
+   
+ 
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+   .daycol{
+      width: 100%;
+      height: auto;
+  }
+   .badge2{
+      width:auto;
+  }
+  
+  
+}
+
+@media (min-width: 0px) and (max-width: 319px) {
+   .daycol{
+      width: 100%;
+      height: auto;
+  }
+   .badge2{
+      width:auto;
+  }
+  
+  
+}
+
