@@ -90,6 +90,9 @@ p{
     padding: 10px 0;
     width: 30%;
 }
+.parawhite{
+    color: white;
+}
 .daycol{
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -120,24 +123,33 @@ table tr:hover{
 }
 .green{
     background-color: #dcf3d7;
-   
+    
 }
 .red{
     background-color: #f9cece;
-    color: #ef4c4e;
+    
 }
 .blue{
     background-color: #cfddfd;
-    color: #2365f9;
+    
 }
 .darkgreen{
     background-color: #4c9e17;
-    color: #ffffff;
 }
-.p2pill{
+.p2pillgreen{
     font-size: 1rem;
     margin-bottom: 0;
-    color: #306920;
+    color: #306920;   
+}
+.p2pillred{
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #ef4c4e;  
+}
+.p2pillblue{
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #2365f9;
 }
 .badge2{
     width:60%;
@@ -152,7 +164,7 @@ table tr:hover{
     background: #f5993b;
 }
 .clockcol1{
-    border: 1px solid white;
+    width: 67px;
     border-radius: 50%;
     background: #fddca7;
 }
@@ -163,7 +175,7 @@ table tr:hover{
     background: #ef5068;
 }
 .clockcol2{
-    border: 1px solid white;
+    width: 67px;
     border-radius: 50%;
     background: #f3a4b8;
 }
@@ -174,7 +186,7 @@ table tr:hover{
     background: #5cbd37;
 }
 .clockcol3{
-    border: 1px solid white;
+    width: 67px;
     border-radius: 50%;
     background: #b6e2a7;
 }
