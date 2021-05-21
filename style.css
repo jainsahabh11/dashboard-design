@@ -1,10 +1,13 @@
 html{
     font-size: 62.5%;
 }
+*{
+    font-family: 'Nunito', sans-serif;
+}
 
 body{
     /* padding: 2.2rem 7rem; */
-    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
     margin: 0;
     box-sizing: border-box;
 }
@@ -25,7 +28,7 @@ ul li .active{
     line-height: 5rem;
     letter-spacing: normal;
     color: #000000;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .h3text{
     font-size: 2.4rem;
@@ -68,7 +71,7 @@ p{
 } */
 .headcol{
     background-color: #f3f6fd;
-    padding: 2.2rem 7rem;
+    padding: 2.2rem 6rem;
 }
 .nav-pills .nav-link.active{
     color: #3a5edd;
@@ -83,7 +86,7 @@ p{
 /* projects contents css */
 
 .projectcontents{
-    padding: 2.2rem 2.2rem 2.2rem 7rem;
+    padding: 2.2rem 4rem 2.2rem 6rem;
     background-color: #f8f8f8;
 }
 .badge1{
@@ -93,6 +96,12 @@ p{
 .parawhite{
     color: white;
 }
+.greyback{
+    background-color: #f8f8f8;
+}
+.brradius{
+    border-radius: 10px;
+}
 .daycol{
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -100,24 +109,55 @@ p{
     width: 23.5%;
     height: auto;
 }
+/* .section5 .col-md-6{
+    margin-left: 15px;
+    margin-right: 15px;
+} */
+.margin10{
+    margin-left: 10px;
+}
+.margin30left{
+    margin-left: 30px;
+}
+.margin30right{
+    margin-right: 30;
+}
+.progressrec{
+ 
+   border: 1px solid white;
+    /* padding: 15px; */
+}
+.insideprogressrec{
+    width: 90%;
+    height: auto;
+    padding: 15px;
+}
 .timerow{
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
 }
+.timezonecir1{
+    padding: 2.2rem 7rem 3rem 0;
+}
 .timezonecir{
-    padding: 2.2rem 7rem 3rem 7rem;
+    padding: 2.2rem 7rem 3rem 5rem;
+}
+.ssimg{
+    width: 200px;
+   
 }
 .colcolor{
     background-color: #fbfafa;
 }
-table tr{
+.projecttable tr{
     border-style: hidden;
 }
-table thead{
+.projecttable thead{
 background-color: #fbfafa;
+padding: 15px;
 }
-table tr:hover{
+.projecttable tr:hover{
     background-color: white;
     
 }
@@ -151,9 +191,12 @@ table tr:hover{
     margin-bottom: 0;
     color: #2365f9;
 }
-.badge2{
-    width:60%;
+.p2pillorange{
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #f5993b;
 }
+
 .fa-check-circle , .fa-exclamation-circle{
     color: #9ca5a9;
 }
@@ -189,6 +232,148 @@ table tr:hover{
     width: 67px;
     border-radius: 50%;
     background: #b6e2a7;
+}
+
+/* rports section  */
+
+.reportspadd{
+    background-color: #f3f6fd;
+    border-radius: 10px;
+    padding: 5rem 3rem 2rem 4rem;
+}
+.linearrec{
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(#314aa3,#4ba6dd);
+  
+}
+.linearrec1{
+    background-image: linear-gradient(#409a8f,#71eb7e);
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.linearrec2{
+    background-image: linear-gradient(#ef5666,#f28582);
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+.searchbox{
+    width: 42%;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+.searchbox1{
+    width: 100%;
+    border: 1px solid white;
+}
+.row .col-md-4 .dropdown button{
+    box-shadow: none;
+}
+.badge3{
+    border-radius: 10px;
+    width: 75%;
+}
+.badgetext{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.orange{
+    background-color: #fff5e5;
+}
+.orangetext{
+    color: #f5993b;
+}
+.bluetext{
+    color: #2365f9;
+}
+.redtext{
+    color: #ef4c4e;
+}
+.reporttable thead{
+    background-color: #f3f6fd;
+}
+.reporttable tr{
+    border-style: hidden;
+}
+.recdiv{
+    width: 75%;
+    height: auto;
+    
+}
+.tdwid{
+    width: 15px;
+}
+.reportrec{
+    border-radius: 10px;
+    width: 60%;
+}
+.reportcardimg{
+    width: 50px;
+    height: 50px;
+}
+.carrec{
+    width: 90%;
+    padding: 15px;
+    height: 560px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(white,white);
+}
+#datepicker  .ui-datepicker{
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: #e1e1e5;
+    line-height: 2;
+    font-size: 1.8rem;
+    
+}
+#datepicker 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button{
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: #6475a9;
+    font-size: 1.8rem;
+}
+#datepicker .ui-widget-header ,
+.ui-state-default, .ui-widget-content .ui-state-default  {
+    border: 1px solid white;
+    background-color: white;
+    color: #6475a9;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#datepicker .ui-datepicker-week-end .ui-state-default{
+    color: red;
+}
+
+.teamsec{
+    background-color: #f3f6fd;
+    border-radius: 10px;
+    padding: 5rem 3rem 2rem 4rem;
+}
+.cardimg{
+    width: 100px;
+    height: 100px; margin: auto;
+}
+.grey{
+    color: #8a8d94;
+}
+.card{
+    border-radius: 10px;
+}
+.teamsec .btn{
+    font-size: 1.5rem;
 }
 
 
@@ -230,6 +415,9 @@ table tr:hover{
   .daycol{
       width: 33.5%;
   }
+   .recdiv{
+        width: 100%;
+    }
 }
 
 
@@ -237,9 +425,10 @@ table tr:hover{
    .daycol{
       width: 50%;
   }
-  .badge2{
-      width:auto;
-  }
+   .recdiv{
+        width: 108%;
+    }
+  
   
   
 }
@@ -252,9 +441,21 @@ table tr:hover{
         width: 70%;
         height: auto;
     }
-     .badge2{
-      width:auto;
-  }
+    .margin10{
+        margin-left: 0;
+
+    }
+     .margin30left{
+        margin-left: 0;
+        
+    }
+    .margin30right{
+        margin-right: 0;
+    }
+    .recdiv{
+        width: 113%;
+    }
+ 
   
    
  
@@ -267,10 +468,21 @@ table tr:hover{
       width: 100%;
       height: auto;
   }
-   .badge2{
-      width:auto;
-  }
-  
+ .margin10{
+        margin-left: 0;
+      
+    }
+   .margin30left{
+        margin-left: 0;
+        
+    }
+    .margin30right{
+        margin-right: 0;
+    }
+      .recdiv{
+        width: 113%;
+    }
+ 
   
 }
 
@@ -279,9 +491,21 @@ table tr:hover{
       width: 100%;
       height: auto;
   }
-   .badge2{
-      width:auto;
-  }
+  .margin10{
+        margin-left: 0;
+        
+    }
+    .margin30left{
+        margin-left: 0;
+        
+    }
+    .margin30right{
+        margin-right: 0;
+    }
+      .recdiv{
+        width: 113%;
+    }
+ 
   
   
 }

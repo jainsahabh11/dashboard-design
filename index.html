@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <!-- font style -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -132,13 +137,14 @@
                             </div>
                         </section>
 
-                        <section class="section4 timerow mt-4 p-5">
+                        <section class="section4 timerow my-5 p-5">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h3 class="h3text"> <strong>Time Spent</strong></h3>
-                                    <div class="row timezonecir mt-5">
-                                        <div class="col-md-4 timezonecir pe-5 mb-3">
-
+                                    <div class="row timezonecir1 mt-5">
+                                        <div class="col-md-4 timezonecir mb-3">
+                                            <img src="img/Screenshot from 2021-05-21 11-13-07.png"
+                                                class="img-fluid ssimg" alt="graph ss">
                                         </div>
 
                                         <div class="col-md-4 timezonecir pe-5 mb-3">
@@ -194,250 +200,296 @@
 
                         <!-- progress section contents -->
 
-                        <section class="section 5 mt-5 bg-white p-5">
-                            <div class="row justify-content-center">
-                                <div class="col-md-5 mb-5 pe-5 ">
-                                    <h3 class="h3text"> <strong>Progress</strong></h3>
-                                    <div class="row colcolor">
-                                        <div class="col-md-12 ">
-                                            <h1 class="h1text">378</h1>
-                                            <h6 class="h6text">Task Completed</h6>
+                        <section class="section5 my-5">
+                            <div class="row d-flex flex-wrap greyback">
+                                <div class="col-md-6 mb-5">
+                                    <div class="progressrec margin30right py-5 px-4 brradius bg-white">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3 class="h3text"> <strong>Progress</strong></h3>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5 me-3 colcolor">
+                                            <div class="col-md-6 p-0 ">
+                                                <img src="img/Screenshot from 2021-05-21 11-52-09.png" alt="60%img"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-md-6 mt-5 pt-5 text-center">
+                                                <h1 class="h1text">378</h1>
+                                                <h6 class="h6text">Task Completed</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="col-md-6 mb-5 ">
+                                                <div class="insideprogressrec brradius greyback">
+                                                    <h5 class="h5text text-dark">30</h5>
+                                                    <p>Need Feedback</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-5">
+                                                <div class="insideprogressrec margin10 brradius greyback">
+                                                    <h5 class="h5text text-dark">600</h5>
+                                                    <p>Task Created</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-7">
-                                    <h3 class="h3text"> <strong>Recent Update</strong></h3>
-                                    <div class="row justify-content-center mt-5 mb-5">
-                                        <div class="col-md-11">
-                                            <i class="fal fa-5x  me-2  fa-check-circle"></i>
-                                            <div class="d-inline-block">
-                                                <h4 class="h4text"> Done: Landing page
-                                                    design
-                                                </h4>
-                                                <div class="textwithli d-flex">Task <li class="limargin ms-3">
-                                                        Development
-                                                    </li>
-                                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <div class="progressrec margin30left py-5 px-4 brradius  bg-white">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3 class="h3text"> <strong>Recent Update</strong></h3>
                                             </div>
                                         </div>
-                                        <div class="col-md-1 mt-4 ps-3">
-                                            <p>2m</p>
+                                        <div class="row justify-content-center mt-5 mb-5">
+                                            <div class="col-md-11">
+                                                <i class="fal fa-5x  me-2  fa-check-circle"></i>
+                                                <div class="d-inline-block">
+                                                    <h4 class="h4text"> Done: Landing page
+                                                        design
+                                                    </h4>
+                                                    <div class="textwithli d-flex">Task <li class="limargin ms-3">
+                                                            Development
+                                                        </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1 mt-4 ps-3">
+                                                <p>2m</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row justify-content-center mb-5">
-                                        <div class="col-md-11">
-                                            <i class="fal fa-5x me-2 fa-exclamation-circle"></i>
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-md-11">
+                                                <i class="fal fa-5x me-2 fa-exclamation-circle"></i>
 
-                                            <div class="d-inline-block">
-                                                <h4 class="h4text"> Done: Bug Fix
-                                                </h4>
-                                                <div class="textwithli d-flex">Task <li class="limargin ms-3">
-                                                        Development
-                                                    </li>
+                                                <div class="d-inline-block">
+                                                    <h4 class="h4text"> Done: Bug Fix
+                                                    </h4>
+                                                    <div class="textwithli d-flex">Task <li class="limargin ms-3">
+                                                            Development
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-1 mt-4 ps-3">
-                                            <p>1h</p>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mb-5">
-                                        <div class="col-md-11">
-                                            <i class="fal fa-5x  me-2  fa-check-circle"></i>
-                                            <div class="d-inline-block">
-                                                <h4 class="h4text"> Done: Landing
-                                                    page
-                                                    design
-                                                </h4>
-                                                <div class="textwithli d-flex">Task <li class="limargin ms-3">
-                                                        Development
-                                                    </li>
-                                                </div>
+                                            <div class="col-md-1 mt-4 ps-3">
+                                                <p>1h</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-1 mt-4 ps-3">
-                                            <p>2m</p>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center mb-5">
-                                        <div class="col-md-11">
-                                            <i class="fal fa-5x  me-2  fa-check-circle"></i>
-                                            <div class="d-inline-block">
-                                                <h4 class="h4text"> Overdue: HTML
-                                                </h4>
-                                                <div class="textwithli d-flex">Task <li class="limargin ms-3">
-                                                        Development
-                                                    </li>
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-md-11">
+                                                <i class="fal fa-5x  me-2  fa-check-circle"></i>
+                                                <div class="d-inline-block">
+                                                    <h4 class="h4text"> Done: Landing
+                                                        page
+                                                        design
+                                                    </h4>
+                                                    <div class="textwithli d-flex">Task <li class="limargin ms-3">
+                                                            Development
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="col-md-1 mt-4 ps-3">
+                                                <p>2m</p>
+                                            </div>
                                         </div>
-                                        <div class="col-md-1 mt-4 ps-3">
-                                            <p>5h</p>
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-md-11">
+                                                <i class="fal fa-5x  me-2  fa-check-circle"></i>
+                                                <div class="d-inline-block">
+                                                    <h4 class="h4text"> Overdue: HTML
+                                                    </h4>
+                                                    <div class="textwithli d-flex">Task <li class="limargin ms-3">
+                                                            Development
+                                                        </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1 mt-4 ps-3">
+                                                <p>5h</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row justify-content-center mb-5">
-                                        <div class="col-md-11">
-                                            <i class="fal fa-5x  me-2  fa-check-circle"></i>
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-md-11">
+                                                <i class="fal fa-5x  me-2  fa-check-circle"></i>
 
-                                            <div class="d-inline-block">
-                                                <h4 class="h4text"> Done: Landing
-                                                    page
-                                                    design
-                                                </h4>
-                                                <div class="textwithli d-flex">Task <li class="limargin ms-3">
-                                                        Development
-                                                    </li>
+                                                <div class="d-inline-block">
+                                                    <h4 class="h4text"> Done: Landing
+                                                        page
+                                                        design
+                                                    </h4>
+                                                    <div class="textwithli d-flex">Task <li class="limargin ms-3">
+                                                            Development
+                                                        </li>
+                                                    </div>
                                                 </div>
-                                            </div>
 
+                                            </div>
+                                            <div class="col-md-1 mt-4 ps-3">
+                                                <p>2m</p>
+                                            </div>
                                         </div>
-                                        <div class="col-md-1 mt-4 ps-3">
-                                            <p>2m</p>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </section>
+
+
+
 
                         <section class="section6 timerow mt-4 px-5 ">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h3 class="h3text"> <strong>Task</strong> 600</h3>
                                     <div class="table-responsive-md">
-                                        <table class="table mt-5 ms-5 ">
+                                        <table class="table projecttable mt-5 ms-5 ">
                                             <thead>
                                                 <tr class="h6text ">
-                                                    <th scope="col">Task</th>
-                                                    <th scope="col">Status</th>
-                                                    <th scope="col">Type</th>
-                                                    <th scope="col">Time Spent</th>
-                                                    <th scope="col">Deadline</th>
+                                                    <th scope="col" class="py-3">Task</th>
+                                                    <th scope="col" class="py-3">Status</th>
+                                                    <th scope="col" class="py-3">Type</th>
+                                                    <th scope="col" class="py-3">Time Spent</th>
+                                                    <th scope="col" class="py-3">Deadline</th>
 
                                                 </tr>
                                             </thead>
                                             <tbody class="h4text mt-5">
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 green rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center green rounded-pill">
                                                             <p class="p2pillgreen">COMPLETE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 red rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center red rounded-pill">
                                                             <p class="p2pillred">OVERDUE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Development</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 11,2020</td>
+                                                    <td class="py-3">Development</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 11,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 blue rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center blue rounded-pill">
                                                             <p class="p2pillblue">IN
                                                                 PROGRESS</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Testing</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Testing</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 green rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center green rounded-pill">
                                                             <p class="p2pillgreen">COMPLETE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Development</td>
-                                                    <td>8h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Development</td>
+                                                    <td class="py-3">8h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 green rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center green rounded-pill">
                                                             <p class="p2pillgreen">COMPLETE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>12h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">12h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 red rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center red rounded-pill">
                                                             <p class="p2pillred">OVERDUE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 red rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center red rounded-pill">
                                                             <p class="p2pillred">OVERDUE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 red rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center red rounded-pill">
                                                             <p class="p2pillred">OVERDUE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 green rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center green rounded-pill">
                                                             <p class="p2pillgreen">COMPLETE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3"> Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 blue rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center blue rounded-pill">
                                                             <p class="p2pillblue">IN
                                                                 PROGRESS</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 green rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center green rounded-pill">
                                                             <p class="p2pillgreen">COMPLETE</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Landing page design</td>
-                                                    <td><span class="badge badge2 blue rounded-pill">
+                                                    <td class="py-3">Landing page design</td>
+                                                    <td class="py-3">
+                                                        <div class="recdiv py-2 text-center blue rounded-pill">
                                                             <p class="p2pillblue">IN
                                                                 PROGRESS</p>
-                                                        </span>
+                                                        </div>
                                                     </td>
-                                                    <td>Design</td>
-                                                    <td>4h 30m</td>
-                                                    <td>Dec 20,2020</td>
+                                                    <td class="py-3">Design</td>
+                                                    <td class="py-3">4h 30m</td>
+                                                    <td class="py-3">Dec 20,2020</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -458,10 +510,286 @@
                 <!-- reports tab contents -->
 
                 <div class="tab-pane fade" id="pills-Reports" role="tabpanel" aria-labelledby="pills-Reports-tab">
-                    ...
+                    <div class="conatiner-fluid bg-white px-4 py-5">
+                        <section class="reportspadd">
+                            <div class="row d-flex flex-wrap">
+                                <div class="col-md-8">
+                                    <div class="row d-flex flex-wrap">
+                                        <div class="col-md-4 mb-5">
+                                            <div class="linearrec mb-3">
+                                                <h4 class="h4text text-white">All tasks</h4>
+                                                <h2 class="h2text text-white font-weight-bold">60</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-5">
+                                            <div class="linearrec1 mb-3">
+                                                <h4 class="h4text  text-white">Complete tasks</h4>
+                                                <h2 class="h2text text-white font-weight-bold">20</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-5">
+                                            <div class="linearrec2 mb-3">
+                                                <h4 class="h4text text-white">Overdue tasks</h4>
+                                                <h2 class="h2text text-white font-weight-bold">30</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5 mb-4">
+                                        <div class="col-md-6 mb-3">
+                                            <form class="d-flex">
+
+                                                <input class="form-control searchbox me-2" type="search"
+                                                    placeholder=" Search" aria-label="Search">
+                                            </form>
+                                        </div>
+                                        <div class="col-md-6 text-end">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary px-3 py-2">Day</button>
+                                                <button type="button" class="btn bg-white px-3 py-2">Weekly</button>
+                                                <button type="button" class="btn bg-white px-3 py-2">Monthly</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-5 pt-5">
+                                        <div class="col-md-12">
+                                            <table class="table table-responsive-md reporttable">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="py-3">
+                                                            <h4 class="h4text">Users</h4>
+                                                        </th>
+                                                        <th scope="col" class="py-3">
+
+                                                        </th>
+                                                        <th scope="col" class="h4text py-3">
+                                                            <div class="dropdown">
+                                                                <button class="btn h4text dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    On Team
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                    <li><a class="dropdown-item" href="#">Production
+                                                                            Manager</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Developer</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Designer</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col" class="py-3 text-center">
+                                                            <h4 class="h4text">Total Hours</h4>
+                                                        </th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="bg-white">
+                                                        <td class="py-3 tdwid">
+                                                            <img src="img/img-1_2021-05-17/img-1.png" alt="V"
+                                                                class="img-fluid reportcardimg">
+                                                        </td>
+                                                        <td class="py-3">
+                                                            <div>
+                                                                <h5 class="h5text bluetext">Vijay Jakhar</h5>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 text-center ">
+                                                            <div class="reportrec  red">
+                                                                <p class="p2pillred p-2 badgetext">Product
+                                                                    Manager</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 text-center">
+                                                            <h5 class="h5text bluetext"><i
+                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bg-white">
+                                                        <td class="py-3 tdwid">
+                                                            <img src="img/img-3_2021-05-17/img-3.png" alt="V"
+                                                                class="img-fluid reportcardimg">
+                                                        </td>
+
+                                                        <td class="py-3">
+                                                            <div class="">
+                                                                <h5 class="h5text bluetext">Vikas Kumar</h5>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="text-center py-3 ">
+                                                            <div class="reportrec blue">
+                                                                <p class="p2pillblue p-2 badgetext">Developer</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 text-center">
+                                                            <h5 class="h5text bluetext"><i
+                                                                    class="far me-3  fa-clock bluetext"></i>03:40</h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bg-white">
+                                                        <td class="py-3 tdwid">
+                                                            <img src="img/img-2_2021-05-17/img-2.png" alt="V"
+                                                                class=" img-fluid reportcardimg">
+                                                        </td>
+                                                        <td class="py-3">
+                                                            <div class="">
+                                                                <h5 class="h5text bluetext">Jyoti Yadav</h5>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="text-center py-3 ">
+                                                            <div class="reportrec orange">
+                                                                <p class="p2pillorange p-2 badgetext">Designer
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 text-center">
+                                                            <h5 class="h5text bluetext"><i
+                                                                    class="far me-3 orangetext fa-clock"></i>03:40</h5>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row d-flex flex-wrap">
+                                        <div class="col-md-12">
+                                            <div class="carrec" id="datepicker">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </section>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="pills-Team" role="tabpanel" aria-labelledby="pills-Team-tab">
-                    ...
+
+                <!-- team tab content -->
+
+                <div class="tab-pane fade bg-white" id="pills-Team" role="tabpanel" aria-labelledby="pills-Team-tab">
+                    <div class="container-fluid bg-white px-5">
+                        <form class="d-flex py-2 ms-5 ">
+                            <i class="far fa-search grey mt-2"></i>
+                            <input class="form-control me-2 searchbox1" type="search" placeholder="Search "
+                                aria-label="Search">
+                        </form>
+                        <section class="teamsec">
+                            <div class="row d-flex flex-wrap">
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card text-center pt-3">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <div class="card-body">
+                                            <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
+                                            <p class="bluetext">Product Manager</p>
+                                            <p>vijay@segnotech.com</p>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <button class="btn btn-lg  btn-primary p-3 w-100">send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card text-center pt-3">
+                                        <i class="fal fa-9x fa-user-circle mb-4 grey"></i>
+                                        <div class="card-body">
+                                            <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
+                                            <p class="bluetext">Product Manager</p>
+                                            <p>vijay@segnotech.com</p>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <button class="btn btn-lg bg-white grey p-3 w-100">send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card text-center pt-3">
+                                        <i class="fal fa-9x fa-user-circle mb-4 grey"></i>
+                                        <div class="card-body">
+                                            <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
+                                            <p class="bluetext">Product Manager</p>
+                                            <p>vijay@segnotech.com</p>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <button class="btn btn-lg bg-white grey p-3 w-100">send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card text-center pt-3">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <div class="card-body">
+                                            <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
+                                            <p class="bluetext">Product Manager</p>
+                                            <p>vijay@segnotech.com</p>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <button class="btn btn-lg bg-white grey p-3 w-100">send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row d-flex flex-wrap mt-5">
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card text-center pt-3">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <div class="card-body">
+                                            <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
+                                            <p class="bluetext">Product Manager</p>
+                                            <p>vijay@segnotech.com</p>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <button class="btn btn-lg grey bg-white p-3 w-100">send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card text-center pt-3">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <div class="card-body">
+                                            <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
+                                            <p class="bluetext">Product Manager</p>
+                                            <p>vijay@segnotech.com</p>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <button class="btn btn-lg grey bg-white p-3 w-100">send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 px-5 mb-5">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center my-5 py-5">
+                                            <i class="fal fa-5x fa-plus-circle mb-4 grey"></i>
+                                            <p><strong>Add Member</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 px-5 mb-5">
+
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -476,13 +804,22 @@
 
 
 
-
-
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+            // $('.ui-datepicker-calendar [title:saturday]').removeClass(ui - datepicker - week - end)
+        });
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
 
 </body>
 
