@@ -21,7 +21,6 @@ ul li .active {
 .h1text {
     font-size: 5.5rem;
     line-height: 7rem;
-    /* font-weight: bold; */
     letter-spacing: normal;
     color: #000000;
 }
@@ -31,7 +30,6 @@ ul li .active {
     line-height: 5rem;
     letter-spacing: normal;
     color: #000000;
-    /* font-weight: bold; */
 }
 
 .h3text {
@@ -110,15 +108,14 @@ p {
     padding: 2.2rem 6rem 0;
 }
 
-.nav-pills .nav-link.active {
+.Dashboard .nav-pills .nav-link.active {
     color: #3a5edd;
     background-color: #f3f6fd;
     border-bottom: 5px solid blue;
     padding: .5rem;
-
 }
 
-.nav-pills .nav-link {
+.Dashboard .nav-pills .nav-link {
     color: #1f2343;
     font-weight: bold;
 }
@@ -147,18 +144,13 @@ p {
     border-radius: 10px;
 }
 
-.daycol {
+.Dashboard .daycol {
     background-color: #f1f1f1;
     border-radius: 10px;
     padding: 2rem 2rem;
-    /* width: 23.5%; */
     height: auto;
 }
 
-/* .section5 .col-md-6{
-    margin-left: 15px;
-    margin-right: 15px;
-} */
 .margin10 {
     margin-left: 10px;
 }
@@ -173,13 +165,10 @@ p {
 
 .section5 .gx-5 {
     --bs-gutter-x: 8rem;
-
 }
 
 .progressrec {
-
     border: 1px solid white;
-    /* padding: 15px; */
 }
 
 .insideprogressrec {
@@ -211,33 +200,29 @@ p {
     margin-left: 3rem;
 }
 
-.projecttable tr {
+.Dashboard.projecttable tr {
     border-style: hidden;
 }
 
 .projecttable thead {
     background-color: #fbfafa;
-    padding: 15px;
+    padding: 1.5rem;
 }
 
 .projecttable tr:hover {
     background-color: white;
-
 }
 
 .green {
     background-color: #dcf3d7;
-
 }
 
 .red {
     background-color: #f9cece;
-
 }
 
 .blue {
     background-color: #cfddfd;
-
 }
 
 .darkgreen {
@@ -312,7 +297,7 @@ p {
     background: #b6e2a7;
 }
 
-/* rports section  */
+/* reports section  */
 .wauto {
     width: 33%;
 }
@@ -329,7 +314,6 @@ p {
     height: 100%;
     border-radius: 10px;
     background-image: linear-gradient(#314aa3, #4ba6dd);
-
 }
 
 .linearrec1 {
@@ -346,7 +330,6 @@ p {
     width: 100%;
     padding: 15px;
     border-radius: 10px;
-
 }
 
 .searchbox {
@@ -387,37 +370,24 @@ p {
     background-color: #fff5e5;
 }
 
-.orangetext {
-    color: #f5993b;
-}
-
-.bluetext {
-    color: #2365f9;
-}
-
-.redtext {
-    color: #ef4c4e;
-}
-
 .reporttable thead {
     background-color: #f3f6fd;
 }
 
-.reporttable tr {
+.Dashboard .reporttable tr {
     border-style: hidden;
 }
 
 .recdiv {
     width: 75%;
     height: auto;
-
 }
 
 .tdwid {
     width: 15px;
 }
 
-.reportrec {
+.Dashboard .reportrec {
     border-radius: 10px;
     width: 170px;
     margin: auto;
@@ -430,7 +400,6 @@ p {
 
 .btn-check:focus {
     box-shadow: none;
-
 }
 
 .blacktext {
@@ -449,7 +418,6 @@ p {
     color: #fff;
     box-shadow: none;
     background-color: #0d6efd;
-    /* border-color: #0d6efd; */
 }
 
 .btn-check:checked+.btn-outline-primary:focus {
@@ -476,7 +444,6 @@ p {
     color: #e1e1e5;
     line-height: 2;
     font-size: 1.8rem;
-
 }
 
 #datepicker .ui-state-default,
@@ -501,7 +468,7 @@ p {
     background-color: white;
     color: #6475a9;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 #datepicker .ui-datepicker-week-end .ui-state-default {
@@ -528,7 +495,6 @@ p {
     color: white;
 }
 
-
 .teamsec {
     background-color: #f3f6fd;
     border-radius: 10px;
@@ -547,6 +513,7 @@ p {
 
 .card {
     border-radius: 10px;
+    height: 100%;
 }
 
 .teamsec .btn {
@@ -582,16 +549,12 @@ p {
     background-color: #fbe4e5;
 }
 
-/* .table>:not(caption)>*>* {
-    border-bottom-width: 15px;
-    border-bottom-color: #f3f6fd;
-
+.Dashboard .table>:not(caption)>*>* {
+    border-bottom-width: 0;
 }
 
-*/
 .tableshadow tr {
     border: 15px solid #f3f6fd;
-    /* border-bottom-color: #f3f6fd; */
 }
 
 .table>:not(:last-child)>:last-child>* {
@@ -612,51 +575,346 @@ p {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border: 5px solid #f3f6fd;
     transform: scale(1);
-
 }
 
-.martop .nav-pills {
+.Dashboard2 .martop .nav-pills {
     float: right;
-
 }
 
-.martop .nav-pills .nav-item {
+.Dashboard2 .martop .nav-pills .nav-item {
     border: 1px solid white;
     background: white;
 
 }
 
-.martop .nav-pills .nav-link {
+.Dashboard2 .martop .nav-pills .nav-link {
     padding: .6rem 1.5rem;
     font-weight: normal;
 }
 
-.martop .nav-pills .nav-link.active {
+.Dashboard2 .martop .nav-pills .nav-link.active {
     color: white;
     background-color: royalblue;
     border-bottom: unset;
+    height: 100%;
+}
+
+.Dashboard .martop .nav-pills {
+    float: right;
+}
+
+.Dashboard .martop .nav-pills .nav-item {
+    border: 1px solid white;
+    background: white;
 
 }
 
+.Dashboard .martop .nav-pills .nav-link {
+    padding: .6rem 1.5rem;
+    font-weight: normal;
+}
+
+.Dashboard .martop .nav-pills .nav-link.active {
+    color: white;
+    background-color: royalblue;
+    border-bottom: unset;
+    height: 100%;
+}
+
+/* dashboardpart2 css */
+.over {
+    overflow-x: hidden;
+}
+
+.Dashboard2 .nav-pills .nav-link.active {
+    color: #3a5edd;
+    background-color: #f3f6fd;
+    border-bottom: 5px solid blue;
+    padding: .5rem;
+}
+
+.section1 {
+    background-color: #f3f6fd;
+}
+
+.section2 {
+    background-color: #f3f6fd;
+}
+
+.section3 {
+    background-color: #f3f6fd;
+    margin-left: 5.5rem;
+    border-radius: 10px;
+}
+
+.paddsec {
+    padding: 1.5rem 6rem 6rem;
+}
+
+.paddsecproject {
+    padding: 0 6rem 1.5rem 1.5rem;
+}
+
+.Dashboard2 .daycol {
+    background-image: linear-gradient(#2887f4, #60e5e7);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.orangelinear {
+    background-image: linear-gradient(#f16e53, #fabe53);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.pinklinear {
+    background-image: linear-gradient(#e16ad4, #f1b5e7);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.greenlinear {
+    background-image: linear-gradient(#1f5475, #74d3ad);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    color: royalblue;
+}
+
+.Dashboard2 .searchbox:focus {
+    box-shadow: none;
+}
+
+.btn-check:active {
+    color: #fff;
+    box-shadow: none;
+    background-color: #0d6efd;
+}
+
+.Dashboard2 .reportrec {
+    border-radius: 1rem;
+    width: 60%;
+    margin-left: 4.5rem;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.Dashboard2 .carrec {
+    width: 80%;
+    padding: 1.5rem;
+    height: auto;
+    margin-left: 8rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(white, white);
+}
 
 
+#datepicker1 .ui-datepicker {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: #e1e1e5;
+    line-height: 2;
+    font-size: 1.8rem;
+}
 
+#datepicker2 .ui-datepicker {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: #e1e1e5;
+    line-height: 2;
+    font-size: 1.8rem;
+}
 
+#datepicker1 .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: #6475a9;
+    font-size: 1.8rem;
+}
 
+#datepicker2 .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: #6475a9;
+    font-size: 1.8rem;
+}
 
+#datepicker1 .ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid white;
+    background-color: white;
+    color: #6475a9;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
 
+#datepicker2 .ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid white;
+    background-color: white;
+    color: #6475a9;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
 
+#datepicker1 .ui-datepicker-week-end .ui-state-default {
+    color: red;
+}
 
+#datepicker2 .ui-datepicker-week-end .ui-state-default {
+    color: red;
+}
 
+#datepicker1 .ui-state-default {
+    text-align: center;
+}
 
+#datepicker2 .ui-state-default {
+    text-align: center;
+}
 
+#datepicker1 .ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: auto;
+    border: unset;
+    background: unset;
+    outline: unset;
+    color: #3b6ff9;
+}
 
+#datepicker1 .ui-datepicker-year {
+    width: auto;
+    border: unset;
+}
 
+#datepicker2 .ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: auto;
+    border: unset;
+    background: unset;
+    outline: unset;
+    color: #3b6ff9;
+}
 
+#datepicker2 .ui-datepicker-year {
+    width: auto;
+    border: unset;
+}
 
+#datepicker .ui-datepicker-title {
+    outline: unset;
+}
 
+#datepicker .ui-state-default .ui-state-highlight .ui-state-active {
+    border: 1px solid #749bfa;
+    border-radius: 50%;
+    background: #749bfa;
+}
 
+#datepicker1 .ui-state-active {
+    background: #769cfa;
+    border-radius: 50%;
+    color: white;
+}
 
+#datepicker2 .ui-state-active {
+    background: #769cfa;
+    border-radius: 50%;
+    color: white;
+}
+
+#datepicker2 .ui-state-default {
+    margin-bottom: 1rem;
+}
+
+.Dashboard2 #datepicker .ui-widget-header {
+    margin-bottom: 1rem;
+}
+
+#datepicker table {
+    margin: 0 0 10.4em;
+}
+
+#datepicker1 .ui-widget-header {
+    margin-bottom: 1rem;
+}
+
+#datepicker1 table {
+    margin: 0 0 10.4em;
+}
+
+#datepicker2 .ui-widget-header {
+    margin-bottom: 1rem;
+}
+
+#datepicker2 table {
+    margin: 0 0 10.4em;
+}
+
+.Dashboard2 .txt-center {
+    text-align: center;
+}
+
+.carousel-control-prev:hover {
+    color: blue;
+}
+
+.carousel-control-next:hover {
+    color: blue;
+}
+
+.Dashboard2 .table tr {
+    border-top: 15px solid #f3f6fd;
+    border-bottom: 15px solid #f3f6fd;
+}
+
+.Dashboard2 .table-responsive-md td {
+    width: 33.33%;
+}
+
+.Dashboard2 .table .bg-white:hover {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    border: 2px solid #f3f6fd;
+}
+
+.carousel a {
+    padding: .5rem 1rem;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.heigh {
+    height: 25px;
+}
+
+/* media query of .Dashboard */
 
 
 @media (min-width: 1281px) {
@@ -664,7 +922,7 @@ p {
         text-align: end;
     }
 
-    .txt-center {
+    .Dashboard .txt-center {
         text-align: center;
     }
 
@@ -676,6 +934,15 @@ p {
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .Dashboard2 .reportrec {
+        width: 80%;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
     .endcentext {
         text-align: end;
     }
@@ -684,7 +951,7 @@ p {
         width: 100%;
     }
 
-    .txt-center {
+    .Dashboard .txt-center {
         text-align: center;
     }
 
@@ -729,16 +996,16 @@ p {
         width: 108%;
     }
 
-    .carrec {
+    .Dashboard .carrec {
         width: 100%;
     }
 
-    .reportrec {
+    .Dashboard .reportrec {
         width: 70%;
         margin: 0;
     }
 
-    .txt-center {
+    .Dashboard .txt-center {
         text-align: center;
     }
 
@@ -778,6 +1045,34 @@ p {
         padding: 2.2rem 4rem 2.5rem;
     }
 
+    .Dashboard2 .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Dashboard2 .txt-center {
+        text-align: center;
+    }
+
+    .Dashboard2 .carrec {
+        width: 100%;
+        margin-left: 5rem;
+    }
+
+    .searchbox {
+        width:
+            65%;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1.5rem;
+    }
+
 }
 
 
@@ -802,17 +1097,17 @@ p {
         width: 113%;
     }
 
-    .carrec {
+    .Dashboard .carrec {
         width: 100%;
         height: auto;
     }
 
-    .reportrec {
+    .Dashboard .reportrec {
         width: 80%;
         margin: 0;
     }
 
-    .txt-center {
+    .Dashboard .txt-center {
         text-align: unset;
     }
 
@@ -871,6 +1166,51 @@ p {
         padding: 2.2rem 3rem;
     }
 
+    .Dashboard2 .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Dashboard2 .txt-center {
+        text-align: left;
+    }
+
+    .Dashboard2 .carrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Dashboard2 .martop {
+        margin-top: 1.5rem;
+    }
+
+    .Dashboard .martop {
+        margin-top: 1.5rem;
+    }
+
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1.5rem;
+    }
+
+    .Dashboard2 .martop .nav-pills {
+        float: left;
+
+    }
+
+    .Dashboard .martop .nav-pills {
+        float: left;
+
+    }
+
+
+
+
 }
 
 
@@ -894,17 +1234,17 @@ p {
         width: 113%;
     }
 
-    .carrec {
+    .Dashboard .carrec {
         width: 100%;
         height: auto;
     }
 
-    .reportrec {
+    .Dashboard .reportrec {
         margin: 0;
         width: 90%;
     }
 
-    .txt-center {
+    .Dashboard .txt-center {
         text-align: unset;
     }
 
@@ -976,10 +1316,61 @@ p {
         padding: 1rem;
     }
 
+    .paddsec {
+        padding: 1.5rem 1.5rem 5rem;
+    }
+
+
+    .Dashboard2 .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Dashboard2 .txt-center {
+        text-align: left;
+    }
+
+    .Dashboard2 .carrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Dashboard2 .martop {
+        margin-top: 1.5rem;
+    }
+
+    .Dashboard .martop {
+        margin-top: 1.5rem;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1.5rem;
+    }
+
+    .Dashboard2 .martop .nav-pills {
+        float: left !important;
+
+    }
+
+    .Dashboard .martop .nav-pills {
+        float: left !important;
+
+    }
+
+    .headcol {
+        padding: 2.2rem 3rem;
+    }
+
+
 }
 
-@media (min-width: 10px) and (max-width: 319px) {
-    .daycol {
+@media (min-width: 50px) and (max-width: 319px) {
+    .Dashboard .daycol {
         width: 100%;
         height: auto;
     }
@@ -1002,12 +1393,12 @@ p {
         width: 113%;
     }
 
-    .reportrec {
+    .Dashboard .reportrec {
         margin: 0;
         width: 90%;
     }
 
-    .txt-center {
+    .Dashboard .txt-center {
         text-align: unset;
     }
 
@@ -1042,7 +1433,7 @@ p {
         text-align: center;
     }
 
-    .carrec {
+    .Dashboard .carrec {
         height: auto;
         width: 100%;
     }
@@ -1073,5 +1464,55 @@ p {
 
     .projecttable {
         margin-left: 0;
+    }
+
+    .paddsec {
+        padding: 1.5rem 1.5rem 5rem;
+    }
+
+    .Dashboard2 .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Dashboard2 .txt-center {
+        text-align: left;
+    }
+
+    .Dashboard2 .carrec {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .Dashboard2 .martop {
+        margin-top: 1.5rem;
+    }
+
+    .Dashboard .martop {
+        margin-top: 1.5rem;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1rem;
+    }
+
+    .Dashboard2 .martop .nav-pills {
+        float: left !important;
+
+    }
+
+    .Dashboard .martop .nav-pills {
+        float: left !important;
+
+    }
+
+    .headcol {
+        padding: 2.2rem;
     }
 }
