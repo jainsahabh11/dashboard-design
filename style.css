@@ -507,6 +507,24 @@ p {
     margin: auto;
 }
 
+.teamsec .btn {
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.teamsec .btn:active {
+    background: royalblue;
+    color: white;
+    border-radius: unset;
+}
+
+
+.teamsec .btn:focus {
+    background: royalblue;
+    color: white;
+    border-radius: unset;
+}
+
 .grey {
     color: #8a8d94;
 }
@@ -597,6 +615,8 @@ p {
     background-color: royalblue;
     border-bottom: unset;
     height: 100%;
+    padding: .6rem 1.5rem;
+
 }
 
 .Dashboard .martop .nav-pills {
@@ -619,6 +639,8 @@ p {
     background-color: royalblue;
     border-bottom: unset;
     height: 100%;
+    padding: .6rem 1.5rem;
+
 }
 
 /* dashboardpart2 css */
@@ -980,7 +1002,7 @@ p {
     }
 
     .headcol {
-        padding: 2.2rem 5rem;
+        padding: 2.2rem 5rem 0;
     }
 
     .timezonecir {
@@ -1038,7 +1060,7 @@ p {
     }
 
     .headcol {
-        padding: 2rem 4rem;
+        padding: 2rem 4rem 0;
     }
 
     .timezonecir {
@@ -1159,7 +1181,7 @@ p {
     }
 
     .headcol {
-        padding: 1.8rem 3rem;
+        padding: 1.8rem 3rem 0;
     }
 
     .timezonecir {
@@ -1292,14 +1314,10 @@ p {
     }
 
     .headcol {
-        padding: 2.2rem 3rem;
+        padding: 2.2rem 3rem 0;
     }
 
     .projectcontents {
-        padding: 1.6rem 2.5rem;
-    }
-
-    .headcol {
         padding: 1.6rem 2.5rem;
     }
 
@@ -1360,10 +1378,6 @@ p {
     .Dashboard .martop .nav-pills {
         float: left !important;
 
-    }
-
-    .headcol {
-        padding: 2.2rem 3rem;
     }
 
 
@@ -1443,14 +1457,10 @@ p {
     }
 
     .headcol {
-        padding: 2.2rem;
+        padding: 2.2rem 2.2rem 0;
     }
 
     .projectcontents {
-        padding: 2rem 2rem;
-    }
-
-    .headcol {
         padding: 2rem 2rem;
     }
 
@@ -1510,9 +1520,5 @@ p {
     .Dashboard .martop .nav-pills {
         float: left !important;
 
-    }
-
-    .headcol {
-        padding: 2.2rem;
     }
 }
