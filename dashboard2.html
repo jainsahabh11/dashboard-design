@@ -10,30 +10,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <!-- css files -->
-
-    <link rel="stylesheet" href="style.css">
-
+    <!-- jquery-ui -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-
     <!-- font style -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- font awesome  -->
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="style.css">
 
     <title>Dashboard2</title>
 </head>
 
 <body>
-    <div class="container-fluid over Dashboard2">
-        <header class="headcol">
+    <div class="container-fluid dashboard-2">
+        <header class="header-part">
             <div class="row mt-5">
                 <ul class="nav nav-pills " id="pills-tab" role="tablist">
                     <li class="nav-item  pe-5" role="presentation">
@@ -55,238 +51,204 @@
         </header>
         <div class="tab-content mt-5 pt-3" id="pills-tabContent">
             <!-- all tab contents -->
-
             <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab">
                 <section class="section1">
-                    <div class="paddsec">
-
-
-                        <div class="row mt-5 gx-5">
-                            <div class="col-md-3 mb-3 mt-5 ">
-                                <div class="daycol">
-                                    <h5 class="h5text text-white mb-5">Work Time Today</h5>
-                                    <h3 class="h3text text-white ">14h 50m</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3 mt-5 ">
-                                <div class=" orangelinear">
-                                    <h5 class="h5text text-white mb-5 ">Work Time This Week</h5>
-                                    <h3 class="h3text text-white ">14h 50m</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3 mt-5 ">
-                                <div class=" pinklinear">
-                                    <h5 class="h5text text-white mb-5 ">Work Time Last Week</h5>
-                                    <h3 class="h3text text-white ">14h 50m</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3 mt-5">
-                                <div class=" greenlinear ">
-                                    <h5 class="h5text text-white mb-5">Work Time This</h5>
-                                    <h3 class="h3text text-white ">14h 50m</h3>
-                                </div>
+                    <div class="row mt-5 gx-5">
+                        <div class="col-md-3 mb-3 mt-5 ">
+                            <div class="day-col">
+                                <h5 class="h5text text-white mb-5">Work Time Today</h5>
+                                <h3 class="h3text text-white ">14h 50m</h3>
                             </div>
                         </div>
-
-
-
-
-                        <div class="row mt-5">
-                            <div class="col-md-7">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <form class="d-flex">
-                                            <input class="form-control searchbox" type="search" placeholder="Search"
-                                                aria-label="Search">
-
-                                        </form>
-                                    </div>
-                                    <div class="col-md-6 txt-center martop">
-                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="pills-Day1-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-Day1" type="button"
-                                                    role="tab" aria-controls="pills-Day1"
-                                                    aria-selected="true">Day</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-Weekly1-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#pills-Weekly1" type="button" role="tab"
-                                                    aria-controls="pills-Weekly1" aria-selected="false">Weekly</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-Monthly1-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#pills-Monthly1" type="button" role="tab"
-                                                    aria-controls="pills-Monthly1"
-                                                    aria-selected="false">Monthly</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-Day1" role="tabpanel"
-                                                aria-labelledby="pills-Day1-tab"></div>
-                                            <div class="tab-pane fade" id="pills-Weekly1" role="tabpanel"
-                                                aria-labelledby="pills-Weekly1-tab"></div>
-                                            <div class="tab-pane fade" id="pills-Monthly1" role="tabpanel"
-                                                aria-labelledby="pills-Monthly1-tab"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-5">
-                                    <div class="col-md-12">
-                                        <div class="table-responsive-md">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">
-                                                            <h4 class="h4text">User</h4>
-                                                        </th>
-                                                        <th scope="col" class="text-center">
-                                                            <h4 class="h4text">On Team</h4>
-                                                        </th>
-                                                        <th scope="col" class="text-center">
-                                                            <h4 class="h4text">Total Hours</h4>
-                                                        </th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-
-                                                    <tr class="bg-white">
-                                                        <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
-                                                                class="img-fluid imgs me-3">
-                                                            <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
-                                                            </h4>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <div class="reportrec red">
-                                                                <p class="p2pillred text-center p-2 badgetext">
-                                                                    Product
-                                                                    Manager</p>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <h5 class="h5text text-center bluetext"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
-                                                            </h5>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="bg-white">
-                                                        <td>
-                                                            <img src="img/img-1_2021-05-17/img-1.png" alt=""
-                                                                class="img-fluid imgs me-3">
-                                                            <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
-                                                            </h4>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <div class="reportrec blue text-center">
-                                                                <p class="p2pillblue p-2 badgetext">Developer</p>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3  fa-clock bluetext"></i>03:40
-                                                            </h5>
-                                                        </td>
-                                                    </tr>
-
-
-                                                    <tr class="bg-white">
-                                                        <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
-                                                                class="img-fluid imgs me-3">
-                                                            <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
-                                                            </h4>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <div class="reportrec orange text-center">
-                                                                <p class="p2pillorange p-2 badgetext">Designer
-                                                                </p>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3 orangetext fa-clock"></i>03:40
-                                                            </h5>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="bg-white">
-                                                        <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
-                                                                class="img-fluid imgs me-3">
-                                                            <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
-                                                            </h4>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <div class="reportrec blue text-center">
-                                                                <p class="p2pillblue p-2 badgetext">Sales</p>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
-                                                            </h5>
-                                                        </td>
-                                                    </tr>
-
-
-                                                    <tr class="bg-white">
-                                                        <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
-                                                                class="img-fluid imgs me-3">
-                                                            <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
-                                                            </h4>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <div class="reportrec red">
-                                                                <p class="p2pillred text-center p-2 badgetext">
-                                                                    Product
-                                                                    Manager</p>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pt-4">
-                                                            <h5 class="h5text text-center bluetext"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
-                                                            </h5>
-                                                        </td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="col-md-5 mt-5">
-                                <div class="row ">
-                                    <div class="col-md-12">
-                                        <div class="carrec" id="datepicker">
-
-
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-3 mb-3 mt-5 ">
+                            <div class=" orangelinear commmon-linear">
+                                <h5 class="h5text text-white mb-5 ">Work Time This Week</h5>
+                                <h3 class="h3text text-white ">14h 50m</h3>
                             </div>
                         </div>
-
-
+                        <div class="col-md-3 mb-3 mt-5 ">
+                            <div class=" pinklinear commmon-linear">
+                                <h5 class="h5text text-white mb-5 ">Work Time Last Week</h5>
+                                <h3 class="h3text text-white ">14h 50m</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 mt-5">
+                            <div class=" greenlinear commmon-linear ">
+                                <h5 class="h5text text-white mb-5">Work Time This</h5>
+                                <h3 class="h3text text-white ">14h 50m</h3>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="row mt-5">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form class="d-flex">
+                                        <input class="form-control search-box" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                    </form>
+                                </div>
+                                <div class="col-md-6 txt-center martop">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-Day1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-Day1" type="button" role="tab"
+                                                aria-controls="pills-Day1" aria-selected="true">Day</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Weekly1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-Weekly1" type="button" role="tab"
+                                                aria-controls="pills-Weekly1" aria-selected="false">Weekly</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Monthly1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-Monthly1" type="button" role="tab"
+                                                aria-controls="pills-Monthly1" aria-selected="false">Monthly</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-Day1" role="tabpanel"
+                                            aria-labelledby="pills-Day1-tab"></div>
+                                        <div class="tab-pane fade" id="pills-Weekly1" role="tabpanel"
+                                            aria-labelledby="pills-Weekly1-tab"></div>
+                                        <div class="tab-pane fade" id="pills-Monthly1" role="tabpanel"
+                                            aria-labelledby="pills-Monthly1-tab"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-md-12">
+                                    <div class="table-responsive-md">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <h4 class="h4text">User</h4>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <h4 class="h4text">On Team</h4>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <h4 class="h4text">Total Hours</h4>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="bg-white">
+                                                    <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
+                                                            class="img-fluid imgs me-3">
+                                                        <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
+                                                        </h4>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <div class="reportrec red">
+                                                            <p class="red-pill commom-pill text-center p-2 pill-text">
+                                                                Product
+                                                                Manager</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <h5 class="h5text text-center bluetext"><i
+                                                                class="far me-3 redtext fa-clock faclock-common "></i>03:40
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                    <td>
+                                                        <img src="img/img-1_2021-05-17/img-1.png" alt=""
+                                                            class="img-fluid imgs me-3">
+                                                        <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
+                                                        </h4>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <div class="reportrec blue text-center">
+                                                            <p class="blue-pill commom-pill p-2 pill-text">Developer</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <h5 class="h5text bluetext text-center"><i
+                                                                class="far me-3  fa-clock faclock-common  bluetext"></i>03:40
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                    <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
+                                                            class="img-fluid imgs me-3">
+                                                        <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
+                                                        </h4>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <div class="reportrec orange text-center">
+                                                            <p class="orange-pill commom-pill p-2 pill-text">Designer
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <h5 class="h5text bluetext text-center"><i
+                                                                class="far me-3 orangetext fa-clock faclock-common "></i>03:40
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                    <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
+                                                            class="img-fluid imgs me-3">
+                                                        <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
+                                                        </h4>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <div class="reportrec blue text-center">
+                                                            <p class="blue-pill commom-pill p-2 pill-text">Sales</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <h5 class="h5text bluetext text-center"><i
+                                                                class="far me-3 redtext fa-clock faclock-common "></i>03:40
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                    <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
+                                                            class="img-fluid imgs me-3">
+                                                        <h4 class="d-inline-block h4text bluetext">Vijay Jakhar
+                                                        </h4>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <div class="reportrec red">
+                                                            <p class="red-pill commom-pill text-center p-2 pill-text">
+                                                                Product
+                                                                Manager</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="pt-4">
+                                                        <h5 class="h5text text-center bluetext"><i
+                                                                class="far me-3 redtext fa-clock faclock-common "></i>03:40
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mt-5">
+                            <div class="row ">
+                                <div class="col-md-12">
+                                    <div class="calender-rectangle" id="datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
-
             <!-- teams section contents -->
-
             <div class="tab-pane fade" id="pills-Teams" role="tabpanel" aria-labelledby="pills-Teams-tab">
                 <section class="section2 ">
                     <div class="paddsec">
-
                         <!--Carousel Wrapper-->
-
                         <div id="multi-item-example1" class="carousel slide carousel-multi-item "
                             data-bs-ride="carousel">
-
                             <!--Controls-->
                             <div class="controls-top text-end">
                                 <a class=" btn-floating me-5 my-3" type="button" href="#multi-item-example1"
@@ -299,109 +261,79 @@
                                 </a>
                             </div>
                             <!--/.Controls-->
-
-
                             <!--Slides-->
                             <div class="carousel-inner" role="listbox">
-
                                 <!--First slide-->
                                 <div class="carousel-item active px-3">
                                     <div class="row gx-5">
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4  mb-3 daycol">
-
+                                            <div class="px-3 py-4  mb-3 day-col">
                                                 <h4 class="h4text text-white"><strong>Web Development</strong></h4>
                                                 <img src="img/blueimgs.png" class="img-fluid mt-5 heigh" alt="++plus">
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 orangelinear">
-
+                                            <div class="px-3 py-4 mb-3 orangelinear commmon-linear">
                                                 <h4 class="h4text text-white "><strong>UI/UX Designer</strong></h4>
                                                 <img src="img/orangeimg.png" alt="orange" class="img-fluid heigh mt-5">
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 pinklinear">
-
+                                            <div class="px-3 py-4 mb-3 pinklinear commmon-linear">
                                                 <h4 class="h4text text-white "><strong>Digital Marketing</strong>
                                                 </h4>
                                                 <img src="img/pinkimgs.png" alt="pinkimgs" class="img-fluid heigh mt-5">
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 greenlinear">
-
+                                            <div class="px-3 py-4 mb-3 greenlinear commmon-linear">
                                                 <h4 class="h4text text-white"><strong>Sales</strong></h4>
                                                 <img src="img/greenimgs.png" class="img-fluid heigh mt-5" alt="img">
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!--/.First slide-->
-
                                 <!--Second slide-->
                                 <div class="carousel-item px-3">
-
                                     <div class="row gx-5">
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 daycol">
-
+                                            <div class="px-3 py-4 mb-3 day-col">
                                                 <h4 class="h4text text-white"><strong>Web Development</strong></h4>
                                                 <img src="img/blueimgs.png" class="img-fluid heigh mt-5" alt="++plus">
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 orangelinear">
+                                            <div class="px-3 py-4 mb-3 orangelinear commmon-linear">
                                                 <h4 class="h4text text-white "><strong>UI/UX Designer</strong></h4>
                                                 <img src="img/orangeimg.png" alt="orange" class="img-fluid heigh mt-5">
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 pinklinear">
+                                            <div class="px-3 py-4 mb-3 pinklinear commmon-linear">
                                                 <h4 class="h4text text-white "><strong>Digital Marketing</strong>
                                                 </h4>
                                                 <img src="img/pinkimgs.png" alt="pinkimgs" class="img-fluid heigh mt-5">
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 greenlinear">
+                                            <div class="px-3 py-4 mb-3 greenlinear commmon-linear">
                                                 <h4 class="h4text text-white"><strong>Sales</strong></h4>
                                                 <img src="img/greenimgs.png" class="img-fluid heigh mt-5" alt="img">
-
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <!--/.Second slide-->
-
-
-
                             </div>
                             <!--/.Slides-->
                         </div>
-
                         <!--/.Carousel Wrapper-->
-
                         <div class="row d-flex flex-wrap mt-5">
                             <div class="col-md-7">
                                 <div class="row justify-content-between">
                                     <div class="col-md-6">
-                                        <div class="input-group mb-3 searchbox">
+                                        <div class="input-group mb-3 search-box">
                                             <span class="input-group-text bg-white"><i class="far fa-search"></i></span>
                                             <input class="form-control" type="search" placeholder=" Search"
                                                 aria-label="Search">
@@ -437,7 +369,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="row mt-5">
                                     <div class="col-md-12">
                                         <div class="table-responsive-md">
@@ -453,11 +384,9 @@
                                                         <th scope="col" class="text-center">
                                                             <h4 class="h4text">Total Hours</h4>
                                                         </th>
-
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -466,18 +395,18 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec red">
-                                                                <p class="p2pillred text-center p-2 badgetext">
+                                                                <p
+                                                                    class="red-pill commom-pill text-center p-2 pill-text">
                                                                     Product
                                                                     Manager</p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text text-center bluetext"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                                    class="far me-3 redtext fa-clock faclock-common "></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="bg-white">
                                                         <td>
                                                             <img src="img/img-1_2021-05-17/img-1.png" alt=""
@@ -487,17 +416,16 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec blue text-center">
-                                                                <p class="p2pillblue p-2 badgetext">Developer</p>
+                                                                <p class="blue-pill commom-pill p-2 pill-text">Developer
+                                                                </p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3  fa-clock bluetext"></i>03:40
+                                                                    class="far me-3  fa-clock faclock-common bluetext"></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -506,17 +434,17 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec orange text-center">
-                                                                <p class="p2pillorange p-2 badgetext">Designer
+                                                                <p class="orange-pill commom-pill p-2 pill-text">
+                                                                    Designer
                                                                 </p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3 orangetext fa-clock"></i>03:40
+                                                                    class="far me-3 orangetext fa-clock faclock-common"></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -525,17 +453,15 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec blue text-center">
-                                                                <p class="p2pillblue p-2 badgetext">Sales</p>
+                                                                <p class="blue-pill commom-pill p-2 pill-text">Sales</p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                                    class="far me-3 redtext fa-clock faclock-common "></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -544,54 +470,43 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec red">
-                                                                <p class="p2pillred text-center p-2 badgetext">
+                                                                <p
+                                                                    class="red-pill commom-pill text-center p-2 pill-text">
                                                                     Product
                                                                     Manager</p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text text-center bluetext"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                                    class="far me-3 redtext fa-clock faclock-common "></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="col-md-5">
                                 <div class="row mt-5">
                                     <div class="col-md-12">
-                                        <div class="carrec" id="datepicker1">
-
-
+                                        <div class="calender-rectangle" id="datepicker1">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </section>
             </div>
-
             <!-- project tab contents -->
-
             <div class="tab-pane fade" id="pills-Projects" role="tabpanel" aria-labelledby="pills-Projects-tab">
                 <section class="section3 container-fluid ">
                     <div class="paddsecproject">
-
                         <!--Carousel Wrapper-->
-
                         <div id="multi-item-example" class="carousel slide carousel-multi-item "
                             data-bs-ride="carousel">
-
                             <!--Controls-->
                             <div class="controls-top text-end">
                                 <a class=" btn-floating me-5 my-3" type="button" href="#multi-item-example"
@@ -604,118 +519,90 @@
                                 </a>
                             </div>
                             <!--/.Controls-->
-
-
                             <!--Slides-->
                             <div class="carousel-inner" role="listbox">
-
                                 <!--First slide-->
                                 <div class="carousel-item active px-3">
                                     <div class="row gx-5">
                                         <div class="col-md-3" style="float:left">
-                                            <div class=" px-3 py-4 mb-3 daycol">
-
+                                            <div class=" px-3 py-4 mb-3 day-col">
                                                 <h4 class="h4text text-white mb-5"><strong>Time Stint</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 orangelinear">
+                                            <div class="px-3 py-4 mb-3 orangelinear commmon-linear">
                                                 <h4 class="h4text text-white mb-5 "><strong>Security
                                                         Troops</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4  mb-3 pinklinear">
+                                            <div class="px-3 py-4  mb-3 pinklinear commmon-linear">
                                                 <h4 class="h4text text-white mb-5 "><strong>Lifedeology</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4  mb-3 greenlinear">
+                                            <div class="px-3 py-4  mb-3 greenlinear commmon-linear">
                                                 <h4 class="h4text text-white mb-5">
                                                     <strong>PlanMyCareers</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!--/.First slide-->
-
                                 <!--Second slide-->
                                 <div class="carousel-item px-3">
-
                                     <div class="row gx-5">
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 daycol">
-
+                                            <div class="px-3 py-4 mb-3 day-col">
                                                 <h4 class="h4text text-white mb-5"><strong>Time Stint</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 orangelinear">
+                                            <div class="px-3 py-4 mb-3 orangelinear commmon-linear">
                                                 <h4 class="h4text text-white mb-5 "><strong>Security
                                                         Troops</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 pinklinear">
+                                            <div class="px-3 py-4 mb-3 pinklinear commmon-linear">
                                                 <h4 class="h4text text-white mb-5 "><strong>Lifedeology</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
-
                                         <div class="col-md-3" style="float:left">
-                                            <div class="px-3 py-4 mb-3 greenlinear">
+                                            <div class="px-3 py-4 mb-3 greenlinear commmon-linear">
                                                 <h4 class="h4text text-white mb-5">
                                                     <strong>PlanMyCareers</strong>
                                                 </h4>
                                                 <h3 class="h3text text-white ">14h 50m</h3>
-
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                                 <!--/.Second slide-->
-
-
-
                             </div>
                             <!--/.Slides-->
                         </div>
-
                         <!--/.Carousel Wrapper-->
-
-
-
                         <div class="row d-flex flex-wrap mt-5">
                             <div class="col-md-7">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="input-group mb-3 searchbox">
+                                        <div class="input-group mb-3 search-box">
                                             <span class="input-group-text bg-white"><i class="far fa-search"></i></span>
                                             <input class="form-control" type="search" placeholder=" Search"
                                                 aria-label="Search">
@@ -749,7 +636,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="row mt-5">
                                     <div class="col-md-12">
                                         <div class="table-responsive-md">
@@ -765,11 +651,9 @@
                                                         <th scope="col" class="text-center">
                                                             <h4 class="h4text">Total Hours</h4>
                                                         </th>
-
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -778,18 +662,18 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec red">
-                                                                <p class="p2pillred text-center p-2 badgetext">
+                                                                <p
+                                                                    class="red-pill commom-pill text-center p-2 pill-text">
                                                                     Product
                                                                     Manager</p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text text-center bluetext"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                                    class="far me-3 redtext fa-clock faclock-common "></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="bg-white">
                                                         <td>
                                                             <img src="img/img-1_2021-05-17/img-1.png" alt=""
@@ -799,17 +683,16 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec blue text-center">
-                                                                <p class="p2pillblue p-2 badgetext">Developer</p>
+                                                                <p class="blue-pill commom-pill p-2 pill-text">Developer
+                                                                </p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3  fa-clock bluetext"></i>03:40
+                                                                    class="far me-3  fa-clock faclock-common bluetext"></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -818,17 +701,17 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec orange text-center">
-                                                                <p class="p2pillorange p-2 badgetext">Designer
+                                                                <p class="orange-pill commom-pill p-2 pill-text">
+                                                                    Designer
                                                                 </p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3 orangetext fa-clock"></i>03:40
+                                                                    class="far me-3 orangetext fa-clock faclock-common"></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -837,17 +720,15 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec blue text-center">
-                                                                <p class="p2pillblue p-2 badgetext">Sales</p>
+                                                                <p class="blue-pill commom-pill p-2 pill-text">Sales</p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text bluetext text-center"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                                    class="far me-3 redtext faclock-common  fa-clock"></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
-
                                                     <tr class="bg-white">
                                                         <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                 class="img-fluid imgs me-3">
@@ -856,57 +737,38 @@
                                                         </td>
                                                         <td class="pt-4">
                                                             <div class="reportrec red">
-                                                                <p class="p2pillred text-center p-2 badgetext">
+                                                                <p
+                                                                    class="red-pill commom-pill text-center p-2 pill-text">
                                                                     Product
                                                                     Manager</p>
                                                             </div>
                                                         </td>
                                                         <td class="pt-4">
                                                             <h5 class="h5text text-center bluetext"><i
-                                                                    class="far me-3 redtext fa-clock"></i>03:40
+                                                                    class="far me-3 redtext fa-clock faclock-common "></i>03:40
                                                             </h5>
                                                         </td>
                                                     </tr>
-
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="col-md-5">
                                 <div class="row mt-5">
                                     <div class="col-md-12">
-                                        <div class="carrec" id="datepicker2">
-
-
+                                        <div class="calender-rectangle" id="datepicker2">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </section>
             </div>
         </div>
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -915,21 +777,18 @@
                 changeMonth: true,
                 changeYear: true
             });
-
         });
         $(function () {
             $("#datepicker1").datepicker({
                 changeMonth: true,
                 changeYear: true
             });
-
         });
         $(function () {
             $("#datepicker2").datepicker({
                 changeMonth: true,
                 changeYear: true
             });
-
         });
     </script>
 

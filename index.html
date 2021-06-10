@@ -10,36 +10,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <!-- css files -->
-
-    <link rel="stylesheet" href="style.css">
-
+    <!-- jquery-ui -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- font style -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- font awesome  -->
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- css files -->
+    <link rel="stylesheet" href="style.css">
 
     <title>Time-Stint DashBoard</title>
 </head>
 
 <body>
-    <div class="conatiner-fluid Dashboard">
-        <header class="headcol">
+    <div class="conatiner-fluid dashboard">
+        <header class="header-part">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item h5text"><a href="#"><strong>timestint/</strong></a></li>
-
                 </ol>
             </nav>
             <div class="row mt-5">
@@ -64,8 +60,6 @@
                             type="button" role="tab" aria-controls="pills-Team" aria-selected="false">Team</button>
                     </li>
                 </ul>
-
-
             </div>
         </header>
 
@@ -73,7 +67,7 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-Tasks" role="tabpanel"
                     aria-labelledby="pills-Tasks-tab">
-                    <div class=" container">
+                    <div class="container">
                         <div class="row justify-content-center text-center mt-5 py-5 gy-5 welcome">
                             <div class="col-md-12">
                                 <h1 class="display-1 text-white">Welcome to Time-Stint DashBoard</h1>
@@ -82,12 +76,10 @@
 
                     </div>
                 </div>
-
                 <!-- project tab contents -->
-
                 <div class="tab-pane fade" id="pills-Projects" role="tabpanel" aria-labelledby="pills-Projects-tab">
-                    <div class="projectcontents">
-                        <section class="section1">
+                    <div class="projectcontents greyback">
+                        <section class="project-sec">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <h2 class="h2text"><strong>Time Stint</strong></h2>
@@ -95,14 +87,14 @@
                                 </div>
                                 <div class="col-md-6 endcentext">
                                     <h5 class="h5text ">Today: December 20,2020</h5>
-                                    <span class="badge badge1 mt-4 darkgreen rounded-pill">
-                                        <p class="mb-0 parawhite">In Progress</p>
+                                    <span class="badge progress-badge mt-4 darkgreen rounded-pill">
+                                        <p class="mb-0 text-white">In Progress</p>
                                     </span>
                                 </div>
                             </div>
                         </section>
 
-                        <section class="section2 mt-5">
+                        <section class="overview-sec mt-5">
                             <div class=" row content">
                                 <div class="col-md-12">
                                     <h4 class="h4text mb-4"><strong>Overview</strong></h4>
@@ -126,25 +118,25 @@
                         <section class="section3">
                             <div class="row gx-4">
                                 <div class="col-md-3 mb-3 mt-5 ">
-                                    <div class="daycol">
+                                    <div class="day-col">
                                         <h4 class="h4text "><strong>Dec 15,2020</strong></h4>
                                         <h5 class="h6text">Day Started</h5>
                                     </div>
                                 </div>
                                 <div class="col-md-3 mb-3 mt-5 ">
-                                    <div class="daycol">
+                                    <div class="day-col">
                                         <h4 class="h4text "><strong>Jan 15,2021</strong></h4>
                                         <h5 class="h6text">Deadline</h5>
                                     </div>
                                 </div>
                                 <div class="col-md-3  mb-3 mt-5  ">
-                                    <div class="daycol">
+                                    <div class="day-col">
                                         <h4 class="h4text "><strong>20</strong></h4>
                                         <h5 class="h6text">Day till Deadline</h5>
                                     </div>
                                 </div>
                                 <div class="col-md-3 mb-3 mt-5 ">
-                                    <div class="daycol">
+                                    <div class="day-col">
                                         <h4 class="h4text "><strong>No Delay</strong></h4>
                                         <h5 class="h6text">Approximate Delay</h5>
                                     </div>
@@ -152,7 +144,7 @@
                             </div>
                         </section>
 
-                        <section class="section4 timerow my-5 p-5">
+                        <section class="section4 my-5 p-5">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h3 class="h3text"> <strong>Time Spent</strong></h3>
@@ -161,11 +153,10 @@
                                             <img src="img/Screenshot from 2021-05-21 11-13-07.png"
                                                 class="img-fluid ssimg" alt="graph ss">
                                         </div>
-
                                         <div class="col-md-4 timezonecir pe-5 mb-3">
                                             <div class="row mb-5 pb-5">
-                                                <div class="col-md-3 py-3 text-center clockcol1">
-                                                    <i class="fal fa-3x fa-clock fa-clock1 "></i>
+                                                <div class="col-md-3 py-3 text-center clockcol1 clockcol-common">
+                                                    <i class="fal fa-3x fa-clock fa-clock1 faclock-common  "></i>
                                                 </div>
                                                 <div class="col-md-9 txcenter">
                                                     <h4 class="h4text">
@@ -177,8 +168,8 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-3 py-3 text-center clockcol2">
-                                                    <i class="fal fa-3x fa-clock fa-clock2 "></i>
+                                                <div class="col-md-3 py-3 text-center clockcol2 clockcol-common">
+                                                    <i class="fal fa-3x fa-clock fa-clock2 faclock-common  "></i>
                                                 </div>
                                                 <div class="col-md-9 txcenter">
                                                     <h4 class="h4text">
@@ -190,11 +181,10 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="col-md-4 timezonecir pe-5 mb-3">
                                             <div class="row">
-                                                <div class="col-md-3 py-3 text-center clockcol3">
-                                                    <i class="fal fa-3x fa-clock fa-clock3 "></i>
+                                                <div class="col-md-3 py-3 text-center clockcol3 clockcol-common">
+                                                    <i class="fal fa-3x fa-clock fa-clock3 faclock-common  "></i>
                                                 </div>
                                                 <div class="col-md-9 txcenter">
                                                     <h4 class="h4text">
@@ -204,27 +194,23 @@
                                                         Time Spent
                                                     </h5>
                                                 </div>
-
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
-
                         <!-- progress section contents -->
-
                         <section class="section5 my-5">
                             <div class="row d-flex flex-wrap greyback gx-5">
                                 <div class="col-md-6 mb-5">
-                                    <div class=" p-5 brradius bg-white">
+                                    <div class="p-5 brradius bg-white">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <h3 class="h3text"> <strong>Progress</strong></h3>
                                             </div>
                                         </div>
-                                        <div class="row mt-5 colcolor">
+                                        <div class="row mt-5 progress-row">
                                             <div class="col-md-6 p-0 txcenter">
                                                 <img src="img/60graph.png" alt="60%img" class="img-fluid">
                                             </div>
@@ -235,7 +221,7 @@
                                         </div>
                                         <div class="row mt-5 gx-4">
                                             <div class="col-md-6 mb-5">
-                                                <div class="insideprogressrec brradius greyback">
+                                                <div class="progress-rec brradius greyback">
                                                     <img src="img/thumb.png" class="img-fluid mb-1" alt="thumb">
                                                     <div class="d-inline-block">
                                                         <h5 class="h5text text-dark">30</h5>
@@ -244,7 +230,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-5">
-                                                <div class="insideprogressrec brradius greyback">
+                                                <div class="progress-rec brradius greyback">
                                                     <img src="img/msgicon.png" class="img-fluid mb-1" alt="thumb">
                                                     <div class="d-inline-block">
                                                         <h5 class="h5text text-dark">600</h5>
@@ -256,7 +242,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
-                                    <div class="  py-5 px-4 brradius  bg-white">
+                                    <div class="py-5 px-4 brradius  bg-white">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <h3 class="h3text"> <strong>Recent Update</strong></h3>
@@ -282,7 +268,6 @@
                                         <div class="row justify-content-center mb-5">
                                             <div class="col-md-11">
                                                 <i class="fal fa-5x me-2 fa-exclamation-circle"></i>
-
                                                 <div class="d-inline-block">
                                                     <h4 class="h4text"> Done: Bug Fix
                                                     </h4>
@@ -298,7 +283,7 @@
                                         </div>
                                         <div class="row justify-content-center mb-5">
                                             <div class="col-md-11">
-                                                <i class="fal fa-5x  me-2  fa-check-circle"></i>
+                                                <i class="fal fa-5x me-2 fa-check-circle"></i>
                                                 <div class="d-inline-block">
                                                     <h4 class="h4text"> Done: Landing
                                                         page
@@ -344,27 +329,22 @@
                                                         </li>
                                                     </div>
                                                 </div>
-
                                             </div>
                                             <div class="col-md-1 mt-4 ps-3">
                                                 <p>2m</p>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </section>
-
-
                         <!-- task sections -->
-
-                        <section class="section6 timerow mt-4">
+                        <section class="task-sec mt-4">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h3 class="h3text"> <strong>Task</strong> 600</h3>
                                     <div class="table-responsive-md">
-                                        <table class="table projecttable mt-5">
+                                        <table class="table project-table mt-5">
                                             <thead>
                                                 <tr class="h6text ">
                                                     <th scope="col" class="py-3">Task</th>
@@ -372,15 +352,14 @@
                                                     <th scope="col" class="py-3">Type</th>
                                                     <th scope="col" class="py-3">Time Spent</th>
                                                     <th scope="col" class="py-3">Deadline</th>
-
                                                 </tr>
                                             </thead>
                                             <tbody class="h4text mt-5">
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center green rounded-pill">
-                                                            <p class="p2pillgreen">COMPLETE</p>
+                                                        <div class="task-td py-2 text-center green rounded-pill">
+                                                            <p class="green-pill commom-pill">COMPLETE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -390,8 +369,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center red rounded-pill">
-                                                            <p class="p2pillred">OVERDUE</p>
+                                                        <div class="task-td py-2 text-center red rounded-pill">
+                                                            <p class="red-pill commom-pill">OVERDUE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Development</td>
@@ -401,8 +380,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center blue rounded-pill">
-                                                            <p class="p2pillblue">IN
+                                                        <div class="task-td py-2 text-center blue rounded-pill">
+                                                            <p class="blue-pill commom-pill">IN
                                                                 PROGRESS</p>
                                                         </div>
                                                     </td>
@@ -413,8 +392,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center green rounded-pill">
-                                                            <p class="p2pillgreen">COMPLETE</p>
+                                                        <div class="task-td py-2 text-center green rounded-pill">
+                                                            <p class="green-pill commom-pill">COMPLETE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Development</td>
@@ -424,8 +403,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center green rounded-pill">
-                                                            <p class="p2pillgreen">COMPLETE</p>
+                                                        <div class="task-td py-2 text-center green rounded-pill">
+                                                            <p class="green-pill commom-pill">COMPLETE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -435,8 +414,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center red rounded-pill">
-                                                            <p class="p2pillred">OVERDUE</p>
+                                                        <div class="task-td py-2 text-center red rounded-pill">
+                                                            <p class="red-pill commom-pill">OVERDUE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -446,8 +425,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center red rounded-pill">
-                                                            <p class="p2pillred">OVERDUE</p>
+                                                        <div class="task-td py-2 text-center red rounded-pill">
+                                                            <p class="red-pill commom-pill">OVERDUE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -457,8 +436,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center red rounded-pill">
-                                                            <p class="p2pillred">OVERDUE</p>
+                                                        <div class="task-td py-2 text-center red rounded-pill">
+                                                            <p class="red-pill commom-pill">OVERDUE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -468,8 +447,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center green rounded-pill">
-                                                            <p class="p2pillgreen">COMPLETE</p>
+                                                        <div class="task-td py-2 text-center green rounded-pill">
+                                                            <p class="green-pill commom-pill">COMPLETE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -479,8 +458,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center blue rounded-pill">
-                                                            <p class="p2pillblue">IN
+                                                        <div class="task-td py-2 text-center blue rounded-pill">
+                                                            <p class="blue-pill commom-pill">IN
                                                                 PROGRESS</p>
                                                         </div>
                                                     </td>
@@ -491,8 +470,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center green rounded-pill">
-                                                            <p class="p2pillgreen">COMPLETE</p>
+                                                        <div class="task-td py-2 text-center green rounded-pill">
+                                                            <p class="green-pill commom-pill">COMPLETE</p>
                                                         </div>
                                                     </td>
                                                     <td class="py-3">Design</td>
@@ -502,8 +481,8 @@
                                                 <tr>
                                                     <td class="py-3">Landing page design</td>
                                                     <td class="py-3">
-                                                        <div class="recdiv py-2 text-center blue rounded-pill">
-                                                            <p class="p2pillblue">IN
+                                                        <div class="task-td py-2 text-center blue rounded-pill">
+                                                            <p class="blue-pill commom-pill">IN
                                                                 PROGRESS</p>
                                                         </div>
                                                     </td>
@@ -516,39 +495,30 @@
                                     </div>
                                 </div>
                             </div>
-
                         </section>
-
-
-
-
-
-
                     </div>
-
                 </div>
                 <!-- reports tab contents -->
-
                 <div class="tab-pane fade" id="pills-Reports" role="tabpanel" aria-labelledby="pills-Reports-tab">
                     <div class="conatiner-fluid bg-white px-4 py-5">
-                        <section class="reportspadd">
+                        <section class="report-sec">
                             <div class="row d-flex flex-wrap">
                                 <div class="col-md-8">
                                     <div class="row gx-5">
                                         <div class="col-md-4 mb-5">
-                                            <div class="linearrec mb-3">
+                                            <div class="linearrec common-linearrec mb-3">
                                                 <h4 class="h4text text-white">All tasks</h4>
                                                 <h2 class="h2text text-white font-weight-bold">60</h2>
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-5">
-                                            <div class="linearrec1 mb-3">
+                                            <div class="linearrec1 common-linearrec mb-3">
                                                 <h4 class="h4text  text-white">Complete tasks</h4>
                                                 <h2 class="h2text text-white font-weight-bold">20</h2>
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-5">
-                                            <div class="linearrec2 mb-3">
+                                            <div class="linearrec2 common-linearrec mb-3">
                                                 <h4 class="h4text text-white">Overdue tasks</h4>
                                                 <h2 class="h2text text-white font-weight-bold">30</h2>
                                             </div>
@@ -556,8 +526,7 @@
                                     </div>
                                     <div class="row mt-5 mb-4">
                                         <div class="col-md-6 mb-3">
-
-                                            <div class="input-group mb-3 searchbox">
+                                            <div class="input-group mb-3 search-box">
                                                 <span class="input-group-text bg-white"><i
                                                         class="far fa-search"></i></span>
                                                 <input class="form-control" type="search" placeholder=" Search"
@@ -595,14 +564,13 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="row mt-5">
                                         <div class="col-md-12">
                                             <div class="table-responsive-md tableshadow ">
-                                                <table class="table ">
+                                                <table class="report-table table ">
                                                     <thead>
                                                         <tr>
-                                                            <th scope="col" class="wauto">
+                                                            <th scope="col" class="wid-set">
                                                                 <h4 class="h4text">User</h4>
                                                             </th>
                                                             <th scope="col" class="text-center">
@@ -624,11 +592,9 @@
                                                             <th scope="col" class="text-center">
                                                                 <h4 class="h4text">Total Hours</h4>
                                                             </th>
-
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-
                                                         <tr class="bg-white">
                                                             <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                     class="img-fluid imgs me-3">
@@ -637,18 +603,18 @@
                                                             </td>
                                                             <td class="pt-4">
                                                                 <div class="reportrec red">
-                                                                    <p class="p2pillred text-center p-2 badgetext">
+                                                                    <p
+                                                                        class="red-pill commom-pill text-center p-2 pill-text">
                                                                         Product
                                                                         Manager</p>
                                                                 </div>
                                                             </td>
                                                             <td class="pt-4">
                                                                 <h5 class="h5text text-center bluetext"><i
-                                                                        class="far me-3 redtext fa-clock"></i>03:40
+                                                                        class="far me-3 redtext fa-clock faclock-common "></i>03:40
                                                                 </h5>
                                                             </td>
                                                         </tr>
-
                                                         <tr class="bg-white">
                                                             <td>
                                                                 <img src="img/img-1_2021-05-17/img-1.png" alt=""
@@ -658,17 +624,16 @@
                                                             </td>
                                                             <td class="pt-4">
                                                                 <div class="reportrec blue text-center">
-                                                                    <p class="p2pillblue p-2 badgetext">Developer</p>
+                                                                    <p class="blue-pill commom-pill p-2 pill-text">
+                                                                        Developer</p>
                                                                 </div>
                                                             </td>
                                                             <td class="pt-4">
                                                                 <h5 class="h5text bluetext text-center"><i
-                                                                        class="far me-3  fa-clock bluetext"></i>03:40
+                                                                        class="far me-3  fa-clock faclock-common  bluetext"></i>03:40
                                                                 </h5>
                                                             </td>
                                                         </tr>
-
-
                                                         <tr class="bg-white">
                                                             <td><img src="img/img-1_2021-05-17/img-1.png" alt=""
                                                                     class="img-fluid imgs me-3">
@@ -677,58 +642,49 @@
                                                             </td>
                                                             <td class="pt-4">
                                                                 <div class="reportrec orange text-center">
-                                                                    <p class="p2pillorange p-2 badgetext">Designer
+                                                                    <p class="orange-pill commom-pill p-2 pill-text">
+                                                                        Designer
                                                                     </p>
                                                                 </div>
                                                             </td>
                                                             <td class="pt-4">
                                                                 <h5 class="h5text bluetext text-center"><i
-                                                                        class="far me-3 orangetext fa-clock"></i>03:40
+                                                                        class="far me-3 orangetext fa-clock faclock-common "></i>03:40
                                                                 </h5>
                                                             </td>
                                                         </tr>
-
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <div class="col-md-4 mt-5">
                                     <div class="row d-flex flex-wrap">
                                         <div class="col-md-12">
-                                            <div class="carrec" id="datepicker">
-
-
+                                            <div class="calender-rec" id="datepicker">
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
-
                             </div>
-
                         </section>
                     </div>
                 </div>
-
                 <!-- team tab content -->
-
                 <div class="tab-pane fade bg-white" id="pills-Team" role="tabpanel" aria-labelledby="pills-Team-tab">
                     <div class="container-fluid bg-white px-5">
                         <form class="d-flex py-2 ms-5 ">
                             <i class="far fa-search grey mt-2"></i>
-                            <input class="form-control me-2 searchbox1" type="search" placeholder="Search "
+                            <input class="form-control me-2 search-box1" type="search" placeholder="Search "
                                 aria-label="Search">
                         </form>
-                        <section class="teamsec">
+                        <section class="team-sec">
                             <div class="row d-flex flex-wrap">
                                 <div class="col-md-3 px-5 mb-5">
                                     <div class="card text-center pt-3">
-                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay"
+                                            class="img-fluid card-img">
                                         <div class="card-body">
                                             <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
                                             <p class="bluetext">Product Manager</p>
@@ -767,7 +723,8 @@
                                 </div>
                                 <div class="col-md-3 px-5 mb-5">
                                     <div class="card text-center pt-3">
-                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay"
+                                            class="img-fluid card-img">
                                         <div class="card-body">
                                             <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
                                             <p class="bluetext">Product Manager</p>
@@ -778,13 +735,12 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                             <div class="row d-flex flex-wrap mt-5">
                                 <div class="col-md-3 px-5 mb-5">
                                     <div class="card text-center pt-3">
-                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay"
+                                            class="img-fluid card-img">
                                         <div class="card-body">
                                             <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
                                             <p class="bluetext">Product Manager</p>
@@ -797,7 +753,8 @@
                                 </div>
                                 <div class="col-md-3 px-5 mb-5">
                                     <div class="card text-center pt-3">
-                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay" class="img-fluid cardimg">
+                                        <img src="img/img-1_2021-05-17/img-1.png" alt="Vijay"
+                                            class="img-fluid card-img">
                                         <div class="card-body">
                                             <h5 class="h5text text-dark"><strong>Vijay Jakhar</strong></h5>
                                             <p class="bluetext">Product Manager</p>
@@ -808,7 +765,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 px-5 mb-5">
                                     <div class="card h-100">
                                         <div class="card-body text-center my-5 py-5">
@@ -818,36 +774,20 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3 px-5 mb-5">
-
                                 </div>
                             </div>
-
                         </section>
-
                     </div>
-
                 </div>
-
             </div>
         </section>
     </div>
-
-
-
-
-
-
-
-
-
     <script>
         $(function () {
             $("#datepicker").datepicker({
                 changeMonth: true,
                 changeYear: true,
-
             });
-
         });
     </script>
 
@@ -859,8 +799,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

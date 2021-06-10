@@ -13,9 +13,7 @@ body {
 }
 
 ul li .active {
-
     background-color: blue;
-
 }
 
 .h1text {
@@ -78,62 +76,32 @@ p {
     color: #a4acb0;
 }
 
-.welcome {
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    background-color: #71eb7e
-}
-
-@keyframes example {
-    0% {
-        background-color: red;
-    }
-
-    25% {
-        background-color: yellow;
-    }
-
-    50% {
-        background-color: blue;
-    }
-
-    100% {
-        background-color: green;
-    }
-}
-
-.headcol {
+.header-part {
     background-color: #f3f6fd;
     padding: 2.2rem 6rem 0;
 }
 
-.Dashboard .nav-pills .nav-link.active {
+.dashboard .nav-pills .nav-link.active,
+.dashboard-2 .nav-pills .nav-link.active {
     color: #3a5edd;
     background-color: #f3f6fd;
     border-bottom: 5px solid blue;
     padding: .5rem;
 }
 
-.Dashboard .nav-pills .nav-link {
+.dashboard .nav-pills .nav-link {
     color: #1f2343;
     font-weight: bold;
 }
 
 /* projects contents css */
-
 .projectcontents {
     padding: 2.2rem 4rem 2.2rem 6rem;
-    background-color: #f8f8f8;
 }
 
-.badge1 {
+.progress-badge {
     padding: 10px 0;
     width: 30%;
-}
-
-.parawhite {
-    color: white;
 }
 
 .greyback {
@@ -144,72 +112,55 @@ p {
     border-radius: 10px;
 }
 
-.Dashboard .daycol {
-    background-color: #f1f1f1;
+.day-col {
     border-radius: 10px;
     padding: 2rem 2rem;
     height: auto;
 }
 
-.margin10 {
-    margin-left: 10px;
-}
-
-.margin30left {
-    margin-left: 30px;
-}
-
-.margin30right {
-    margin-right: 30;
+.dashboard .day-col {
+    background-color: #f1f1f1;
 }
 
 .section5 .gx-5 {
     --bs-gutter-x: 8rem;
 }
 
-.progressrec {
-    border: 1px solid white;
-}
-
-.insideprogressrec {
+.progress-rec {
     width: 95%;
     height: auto;
     padding: 15px;
 }
 
-.timerow {
+.task-sec {
     border: 1px solid white;
     border-radius: 10px;
     padding: 0 3rem;
     background-color: white;
 }
 
-.timezonecir1 {
-    padding: 2.2rem 7rem 3rem 0;
-}
-
 .timezonecir {
     padding: 2.2rem 7rem 3rem 5rem;
 }
 
-.colcolor {
+.progress-row {
     background-color: #fbfafa;
 }
 
-.projecttable {
+.project-table {
     margin-left: 3rem;
 }
 
-.Dashboard.projecttable tr {
+table tr {
     border-style: hidden;
 }
 
-.projecttable thead {
+.project-table thead {
     background-color: #fbfafa;
     padding: 1.5rem;
 }
 
-.projecttable tr:hover {
+.project-table tr:hover {
     background-color: white;
 }
 
@@ -229,27 +180,24 @@ p {
     background-color: #4c9e17;
 }
 
-.p2pillgreen {
+.commom-pill {
     font-size: 1rem;
     margin-bottom: 0;
+}
+
+.green-pill {
     color: #306920;
 }
 
-.p2pillred {
-    font-size: 1rem;
-    margin-bottom: 0;
+.red-pill {
     color: #ef4c4e;
 }
 
-.p2pillblue {
-    font-size: 1rem;
-    margin-bottom: 0;
+.blue-pill {
     color: #2365f9;
 }
 
-.p2pillorange {
-    font-size: 1rem;
-    margin-bottom: 0;
+.orange-pill {
     color: #f5993b;
 }
 
@@ -258,96 +206,90 @@ p {
     color: #9ca5a9;
 }
 
-.fa-clock1 {
-    border: 10px solid #f5993b;
+.faclock-common {
     border-radius: 50%;
     color: white;
+}
+
+.clockcol-common {
+    width: 6.7rem;
+    border-radius: 50%;
+}
+
+.fa-clock1 {
+    border: 10px solid #f5993b;
     background: #f5993b;
 }
 
 .clockcol1 {
-    width: 6.7rem;
-    border-radius: 50%;
     background: #fddca7;
 }
 
 .fa-clock2 {
     border: 10px solid #ef5068;
-    border-radius: 50%;
-    color: white;
     background: #ef5068;
 }
 
 .clockcol2 {
-    width: 6.7rem;
-    border-radius: 50%;
     background: #f3a4b8;
 }
 
 .fa-clock3 {
     border: 10px solid #5cbd37;
-    border-radius: 50%;
-    color: white;
     background: #5cbd37;
 }
 
 .clockcol3 {
-    width: 6.7rem;
-    border-radius: 50%;
     background: #b6e2a7;
 }
 
 /* reports section  */
-.wauto {
+.wid-set {
     width: 33%;
 }
 
-.reportspadd {
+.report-sec {
     background-color: #f3f6fd;
     border-radius: 10px;
     padding: 5rem 3rem 2rem 4rem;
 }
 
-.linearrec {
+.common-linearrec {
+    height: 100%;
     width: 100%;
     padding: 15px;
-    height: 100%;
     border-radius: 10px;
+}
+
+.linearrec {
     background-image: linear-gradient(#314aa3, #4ba6dd);
 }
 
 .linearrec1 {
     background-image: linear-gradient(#409a8f, #71eb7e);
-    height: 100%;
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
+
 }
 
 .linearrec2 {
     background-image: linear-gradient(#ef5666, #f28582);
-    height: 100%;
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
 }
 
-.searchbox {
+.search-box {
     width: 42%;
     border: unset;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
 }
 
-.searchbox .input-group-text {
+.search-box .input-group-text {
     border: unset;
 }
 
-.searchbox .form-control {
+.search-box .form-control {
     border: unset;
     box-shadow: unset;
 }
 
-.searchbox1 {
+.search-box1 {
     width: 100%;
     border: 1px solid white;
 }
@@ -356,12 +298,7 @@ p {
     box-shadow: none;
 }
 
-.badge3 {
-    border-radius: 10px;
-    width: 75%;
-}
-
-.badgetext {
+.pill-text {
     font-size: 1.5rem;
     font-weight: normal;
 }
@@ -370,44 +307,23 @@ p {
     background-color: #fff5e5;
 }
 
-.reporttable thead {
+.report-table thead {
     background-color: #f3f6fd;
 }
 
-.Dashboard .reporttable tr {
-    border-style: hidden;
-}
-
-.recdiv {
+.task-td {
     width: 75%;
     height: auto;
 }
 
-.tdwid {
-    width: 15px;
-}
-
-.Dashboard .reportrec {
+.dashboard .reportrec {
     border-radius: 10px;
     width: 170px;
     margin: auto;
 }
 
-.reportcardimg {
-    width: 50px;
-    height: 50px;
-}
-
 .btn-check:focus {
     box-shadow: none;
-}
-
-.blacktext {
-    color: black;
-}
-
-.btn-outline1-primary {
-    background-color: white;
 }
 
 .btn-check:active+.btn-outline1-primary,
@@ -428,7 +344,7 @@ p {
     box-shadow: none;
 }
 
-.carrec {
+.calender-rec {
     width: 90%;
     padding: 15px 15px 0 0;
     height: 80rem;
@@ -495,31 +411,31 @@ p {
     color: white;
 }
 
-.teamsec {
+.team-sec {
     background-color: #f3f6fd;
     border-radius: 10px;
     padding: 5rem 3rem 2rem 4rem;
 }
 
-.cardimg {
+.card-img {
     width: 100px;
     height: 100px;
     margin: auto;
 }
 
-.teamsec .btn {
+.team-sec .btn {
     background: white;
     border-radius: 0 0 10px 10px;
 }
 
-.teamsec .btn:active {
+.team-sec .btn:active {
     background: royalblue;
     color: white;
     border-radius: unset;
 }
 
 
-.teamsec .btn:focus {
+.team-sec .btn:focus {
     background: royalblue;
     color: white;
     border-radius: unset;
@@ -534,7 +450,7 @@ p {
     height: 100%;
 }
 
-.teamsec .btn {
+.team-sec .btn {
     font-size: 1.5rem;
 }
 
@@ -567,12 +483,14 @@ p {
     background-color: #fbe4e5;
 }
 
-.Dashboard .table>:not(caption)>*>* {
+.dashboard .table>:not(caption)>*>* {
     border-bottom-width: 0;
 }
 
 .tableshadow tr {
-    border: 15px solid #f3f6fd;
+    border-top: 15px solid #f3f6fd;
+    border-bottom: 15px solid #f3f6fd;
+
 }
 
 .table>:not(:last-child)>:last-child>* {
@@ -595,64 +513,53 @@ p {
     transform: scale(1);
 }
 
-.Dashboard2 .martop .nav-pills {
+.dashboard-2 .martop .nav-pills {
     float: right;
 }
 
-.Dashboard2 .martop .nav-pills .nav-item {
+.dashboard-2 .martop .nav-pills .nav-item {
     border: 1px solid white;
     background: white;
-
 }
 
-.Dashboard2 .martop .nav-pills .nav-link {
+.dashboard-2 .martop .nav-pills .nav-link {
     padding: .6rem 1.5rem;
     font-weight: normal;
 }
 
-.Dashboard2 .martop .nav-pills .nav-link.active {
+.dashboard-2 .martop .nav-pills .nav-link.active {
     color: white;
     background-color: royalblue;
     border-bottom: unset;
     height: 100%;
     padding: .6rem 1.5rem;
-
 }
 
-.Dashboard .martop .nav-pills {
+.dashboard .martop .nav-pills {
     float: right;
 }
 
-.Dashboard .martop .nav-pills .nav-item {
+.dashboard .martop .nav-pills .nav-item {
     border: 1px solid white;
     background: white;
-
 }
 
-.Dashboard .martop .nav-pills .nav-link {
+.dashboard .martop .nav-pills .nav-link {
     padding: .6rem 1.5rem;
     font-weight: normal;
 }
 
-.Dashboard .martop .nav-pills .nav-link.active {
+.dashboard .martop .nav-pills .nav-link.active {
     color: white;
     background-color: royalblue;
     border-bottom: unset;
     height: 100%;
     padding: .6rem 1.5rem;
-
 }
 
 /* dashboardpart2 css */
 .over {
     overflow-x: hidden;
-}
-
-.Dashboard2 .nav-pills .nav-link.active {
-    color: #3a5edd;
-    background-color: #f3f6fd;
-    border-bottom: 5px solid blue;
-    padding: .5rem;
 }
 
 .section1 {
@@ -677,8 +584,12 @@ p {
     padding: 0 6rem 1.5rem 1.5rem;
 }
 
-.Dashboard2 .daycol {
+.dashboard-2 .day-col {
     background-image: linear-gradient(#2887f4, #60e5e7);
+    width: 100%;
+}
+
+.commmon-linear {
     width: 100%;
     height: auto;
     border-radius: 1rem;
@@ -687,26 +598,14 @@ p {
 
 .orangelinear {
     background-image: linear-gradient(#f16e53, #fabe53);
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    padding: 2rem 2rem;
 }
 
 .pinklinear {
     background-image: linear-gradient(#e16ad4, #f1b5e7);
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    padding: 2rem 2rem;
 }
 
 .greenlinear {
     background-image: linear-gradient(#1f5475, #74d3ad);
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    padding: 2rem 2rem;
 }
 
 .fa-chevron-right,
@@ -714,7 +613,7 @@ p {
     color: royalblue;
 }
 
-.Dashboard2 .searchbox:focus {
+.dashboard-2 .search-box:focus {
     box-shadow: none;
 }
 
@@ -724,7 +623,7 @@ p {
     background-color: #0d6efd;
 }
 
-.Dashboard2 .reportrec {
+.dashboard-2 .reportrec {
     border-radius: 1rem;
     width: 60%;
     margin-left: 4.5rem;
@@ -734,7 +633,7 @@ p {
     width: 33%;
 }
 
-.Dashboard2 .carrec {
+.dashboard-2 .calender-rec {
     width: 80%;
     padding: 1.5rem;
     height: auto;
@@ -874,7 +773,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.Dashboard2 #datepicker .ui-widget-header {
+.dashboard-2 #datepicker .ui-widget-header {
     margin-bottom: 1rem;
 }
 
@@ -898,7 +797,7 @@ p {
     margin: 0 0 10.4em;
 }
 
-.Dashboard2 .txt-center {
+.dashboard-2 .txt-center {
     text-align: center;
 }
 
@@ -910,16 +809,16 @@ p {
     color: blue;
 }
 
-.Dashboard2 .table tr {
+.dashboard-2 .table tr {
     border-top: 15px solid #f3f6fd;
     border-bottom: 15px solid #f3f6fd;
 }
 
-.Dashboard2 .table-responsive-md td {
+.dashboard-2 .table-responsive-md td {
     width: 33.33%;
 }
 
-.Dashboard2 .table .bg-white:hover {
+.dashboard-2 .table .bg-white:hover {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     transform: scale(1);
     border: 2px solid #f3f6fd;
@@ -936,27 +835,23 @@ p {
     height: 25px;
 }
 
-/* media query of .Dashboard */
-
-
+/* media query of .dashboard */
 @media (min-width: 1281px) {
     .endcentext {
         text-align: end;
     }
 
-    .Dashboard .txt-center {
+    .dashboard .txt-center {
         text-align: center;
     }
 
     .txt-end {
         text-align: end;
     }
-
-
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .Dashboard2 .reportrec {
+    .dashboard-2 .reportrec {
         width: 80%;
     }
 
@@ -969,11 +864,11 @@ p {
         text-align: end;
     }
 
-    .recdiv {
+    .task-td {
         width: 100%;
     }
 
-    .Dashboard .txt-center {
+    .dashboard .txt-center {
         text-align: center;
     }
 
@@ -985,14 +880,8 @@ p {
         font-size: 55%;
     }
 
-    .clockcol1 {
-        width: 7.4rem;
-    }
-
-    .clockcol2 {
-        width: 7.4rem
-    }
-
+    .clockcol1,
+    .clockcol2,
     .clockcol3 {
         width: 7.4rem;
     }
@@ -1001,7 +890,7 @@ p {
         padding: 2.2rem 5rem;
     }
 
-    .headcol {
+    .header-part {
         padding: 2.2rem 5rem 0;
     }
 
@@ -1010,24 +899,21 @@ p {
     }
 }
 
-
-
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    .recdiv {
+    .task-td {
         width: 108%;
     }
 
-    .Dashboard .carrec {
+    .dashboard .calender-rec {
         width: 100%;
     }
 
-    .Dashboard .reportrec {
+    .dashboard .reportrec {
         width: 70%;
         margin: 0;
     }
 
-    .Dashboard .txt-center {
+    .dashboard .txt-center {
         text-align: center;
     }
 
@@ -1039,27 +925,22 @@ p {
         font-size: 50%;
     }
 
-    .wauto {
+    .wid-set {
         width: auto;
     }
 
-    .clockcol1 {
-        width: 7.4rem;
-    }
-
-    .clockcol2 {
-        width: 7.4rem
-    }
-
+    .clockcol1,
+    .clockcol2,
     .clockcol3 {
         width: 7.4rem;
     }
+
 
     .projectcontents {
         padding: 2rem 4rem;
     }
 
-    .headcol {
+    .header-part {
         padding: 2rem 4rem 0;
     }
 
@@ -1067,23 +948,22 @@ p {
         padding: 2.2rem 4rem 2.5rem;
     }
 
-    .Dashboard2 .reportrec {
+    .dashboard-2 .reportrec {
         width: 100%;
         margin-left: 0;
     }
 
-    .Dashboard2 .txt-center {
+    .dashboard-2 .txt-center {
         text-align: center;
     }
 
-    .Dashboard2 .carrec {
+    .dashboard-2 .calender-rec {
         width: 100%;
         margin-left: 5rem;
     }
 
-    .searchbox {
-        width:
-            65%;
+    .search-box {
+        width: 65%;
     }
 
     .section3 {
@@ -1094,42 +974,24 @@ p {
     .paddsecproject {
         padding: 1.5rem;
     }
-
 }
 
-
-
 @media (min-width: 481px) and (max-width: 767px) {
-
-    .margin10 {
-        margin-left: 0;
-
-    }
-
-    .margin30left {
-        margin-left: 0;
-
-    }
-
-    .margin30right {
-        margin-right: 0;
-    }
-
-    .recdiv {
+    .task-td {
         width: 113%;
     }
 
-    .Dashboard .carrec {
+    .dashboard .calender-rec {
         width: 100%;
         height: auto;
     }
 
-    .Dashboard .reportrec {
+    .dashboard .reportrec {
         width: 80%;
         margin: 0;
     }
 
-    .Dashboard .txt-center {
+    .dashboard .txt-center {
         text-align: unset;
     }
 
@@ -1141,20 +1003,12 @@ p {
         font-size: 45%;
     }
 
-    .wauto {
+    .wid-set {
         width: auto;
     }
 
-    .clockcol1 {
-        width: 7.4rem;
-        margin: auto;
-    }
-
-    .clockcol2 {
-        width: 7.4rem;
-        margin: auto;
-    }
-
+    .clockcol1,
+    .clockcol2,
     .clockcol3 {
         width: 7.4rem;
         margin: auto;
@@ -1172,7 +1026,7 @@ p {
         padding: 0;
     }
 
-    .projecttable {
+    .project-table {
         margin-left: 0;
     }
 
@@ -1180,7 +1034,7 @@ p {
         padding: 1.8rem 3rem;
     }
 
-    .headcol {
+    .header-part {
         padding: 1.8rem 3rem 0;
     }
 
@@ -1188,28 +1042,27 @@ p {
         padding: 2.2rem 3rem;
     }
 
-    .Dashboard2 .reportrec {
+    .dashboard-2 .reportrec {
         width: 100%;
         margin-left: 0;
     }
 
-    .Dashboard2 .txt-center {
+    .dashboard-2 .txt-center {
         text-align: left;
     }
 
-    .Dashboard2 .carrec {
+    .dashboard-2 .calender-rec {
         width: 100%;
         margin-left: 0;
     }
 
-    .Dashboard2 .martop {
+    .dashboard-2 .martop {
         margin-top: 1.5rem;
     }
 
-    .Dashboard .martop {
+    .dashboard .martop {
         margin-top: 1.5rem;
     }
-
 
     .section3 {
         margin-left: 0;
@@ -1220,53 +1073,35 @@ p {
         padding: 1.5rem;
     }
 
-    .Dashboard2 .martop .nav-pills {
+    .dashboard-2 .martop .nav-pills {
         float: left;
-
     }
 
-    .Dashboard .martop .nav-pills {
+    .dashboard .martop .nav-pills {
         float: left;
-
     }
 
-
-
-
+    .report-sec {
+        padding: 2rem 2rem 0 2rem;
+    }
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
-
-    .margin10 {
-        margin-left: 0;
-
-    }
-
-    .margin30left {
-        margin-left: 0;
-
-    }
-
-    .margin30right {
-        margin-right: 0;
-    }
-
-    .recdiv {
+    .task-td {
         width: 113%;
     }
 
-    .Dashboard .carrec {
+    .dashboard .calender-rec {
         width: 100%;
         height: auto;
     }
 
-    .Dashboard .reportrec {
+    .dashboard .reportrec {
         margin: 0;
         width: 90%;
     }
 
-    .Dashboard .txt-center {
+    .dashboard .txt-center {
         text-align: unset;
     }
 
@@ -1278,20 +1113,12 @@ p {
         font-size: 40%;
     }
 
-    .wauto {
+    .wid-set {
         width: auto;
     }
 
-    .clockcol1 {
-        width: 8.4rem;
-        margin: auto;
-    }
-
-    .clockcol2 {
-        width: 8.4rem;
-        margin: auto;
-    }
-
+    .clockcol1,
+    .clockcol2,
     .clockcol3 {
         width: 8.4rem;
         margin: auto;
@@ -1305,15 +1132,15 @@ p {
         padding: 0;
     }
 
-    .projecttable {
+    .project-table {
         margin-left: 0;
     }
 
-    .reportspadd {
+    .report-sec {
         padding: 2rem 2rem 0 2rem;
     }
 
-    .headcol {
+    .header-part {
         padding: 2.2rem 3rem 0;
     }
 
@@ -1329,7 +1156,7 @@ p {
         padding: 0;
     }
 
-    .projecttable {
+    .project-table {
         margin-left: 0;
         padding: 1rem;
     }
@@ -1338,26 +1165,22 @@ p {
         padding: 1.5rem 1.5rem 5rem;
     }
 
-
-    .Dashboard2 .reportrec {
+    .dashboard-2 .reportrec {
         width: 100%;
         margin-left: 0;
     }
 
-    .Dashboard2 .txt-center {
+    .dashboard-2 .txt-center {
         text-align: left;
     }
 
-    .Dashboard2 .carrec {
+    .dashboard-2 .calender-rec {
         width: 100%;
         margin-left: 0;
     }
 
-    .Dashboard2 .martop {
-        margin-top: 1.5rem;
-    }
-
-    .Dashboard .martop {
+    .dashboard-2 .martop,
+    .dashboard .martop {
         margin-top: 1.5rem;
     }
 
@@ -1370,49 +1193,27 @@ p {
         padding: 1.5rem;
     }
 
-    .Dashboard2 .martop .nav-pills {
+    .dashboard-2 .martop .nav-pills,
+    .dashboard .martop .nav-pills {
         float: left !important;
-
     }
-
-    .Dashboard .martop .nav-pills {
-        float: left !important;
-
-    }
-
-
 }
 
-@media (min-width: 50px) and (max-width: 319px) {
-    .Dashboard .daycol {
+@media only screen and (max-width: 319px) {
+    .dashboard .day-col {
         width: 100%;
-        height: auto;
     }
 
-    .margin10 {
-        margin-left: 0;
-
-    }
-
-    .margin30left {
-        margin-left: 0;
-
-    }
-
-    .margin30right {
-        margin-right: 0;
-    }
-
-    .recdiv {
+    .task-td {
         width: 113%;
     }
 
-    .Dashboard .reportrec {
+    .dashboard .reportrec {
         margin: 0;
         width: 90%;
     }
 
-    .Dashboard .txt-center {
+    .dashboard .txt-center {
         text-align: unset;
     }
 
@@ -1424,20 +1225,12 @@ p {
         font-size: 35%;
     }
 
-    .wauto {
+    .wid-set {
         width: auto;
     }
 
-    .clockcol1 {
-        width: 8.4rem;
-        margin: auto;
-    }
-
-    .clockcol2 {
-        width: 8.4rem;
-        margin: auto;
-    }
-
+    .clockcol1,
+    .clockcol2,
     .clockcol3 {
         width: 8.4rem;
         margin: auto;
@@ -1447,16 +1240,16 @@ p {
         text-align: center;
     }
 
-    .Dashboard .carrec {
+    .dashboard .calender-rec {
         height: auto;
         width: 100%;
     }
 
-    .reportspadd {
+    .report-sec {
         padding: 3rem 1rem 0;
     }
 
-    .headcol {
+    .header-part {
         padding: 2.2rem 2.2rem 0;
     }
 
@@ -1472,7 +1265,7 @@ p {
         padding: 0;
     }
 
-    .projecttable {
+    .project-table {
         margin-left: 0;
     }
 
@@ -1480,26 +1273,23 @@ p {
         padding: 1.5rem 1.5rem 5rem;
     }
 
-    .Dashboard2 .reportrec {
+    .dashboard-2 .reportrec {
         width: 100%;
         margin-left: 0;
     }
 
-    .Dashboard2 .txt-center {
+    .dashboard-2 .txt-center {
         text-align: left;
     }
 
-    .Dashboard2 .carrec {
+    .dashboard-2 .calender-rec {
         width: 100%;
         margin-left: 0;
         padding: 0;
     }
 
-    .Dashboard2 .martop {
-        margin-top: 1.5rem;
-    }
-
-    .Dashboard .martop {
+    .dashboard-2 .martop,
+    .dashboard .martop {
         margin-top: 1.5rem;
     }
 
@@ -1512,13 +1302,9 @@ p {
         padding: 1rem;
     }
 
-    .Dashboard2 .martop .nav-pills {
+    .dashboard-2 .martop .nav-pills,
+    .dashboard .martop .nav-pills {
         float: left !important;
-
     }
 
-    .Dashboard .martop .nav-pills {
-        float: left !important;
-
-    }
 }
